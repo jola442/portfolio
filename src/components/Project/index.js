@@ -1,9 +1,22 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa"
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import "./index.css"
 
 function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) {
+
+  // const [videoButtonClicked, setVideoButtonClicked] = useState(false);
+  const [descriptionButtonClicked, setDescriptionButtonClicked] = useState(true);
+
+  function showDescription(){
+    setDescriptionButtonClicked(true);
+  }
+
+  function showVideo(){
+    setDescriptionButtonClicked(false);
+  }
+
   return (
     <div className='project-container'>
         <div className='project-info-container'>
@@ -21,19 +34,22 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
         </div>
         <div className="project-details-container">
             <div className='project-buttons'>
-              <button className='description-button'>Description</button>
-              <button className='video-button'>Video</button>
+              <button className='description-button' onClick={showDescription}>Description</button>
+            <div/>
+              <button className='video-button' onClick={showVideo}>Video</button>
             </div>
   
-            <div className='project-description'>
+            {descriptionButtonClicked && <div className='project-description'>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus unde recusandae accusantium obcaecati quam vitae cupiditate vero facilis quod animi veritatis eligendi neque suscipit numquam iste atque architecto, enim tenetur minus consectetur aspernatur officia ex. Aperiam, aspernatur! Architecto, id doloribus?</p>
-            </div>
-            <div className='project-video'>
+            </div>}
+
+            {!descriptionButtonClicked &&<div className='project-video'>
               <video controls>
                 <source src= {videoLink} type="video/mp4"></source>
                 Your browser does not support this video
               </video>
             </div>
+            }
         </div>
 
     </div>
