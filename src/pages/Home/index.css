@@ -1,92 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
 @import "animate.css";
 
-*{
-  box-sizing:border-box;
-  text-decoration: none;
-}
-
-:root{
-  --dominant-colour:white;
-  --complementary-colour-blue:#5084f4;
-  --complementary-colour-torquoise:#3189A0;
-  --complementary-colour-grey:#444655;
-  --complemenary-colour:#B1BBF3;
-}
-
-body{
-  margin:0;
-  background-color: var(--dominant-colour);
-  font-family: 'EB Garamond', serif;
-}
-
-h1{
-  color:var(--complementary-colour-blue);
-}
-
-
-.desktop-nav{
-  display: none;
-}
-
-nav{
-  background-color: var(--complementary-colour-blue);
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: sticky;
-  top:0;
-  padding-bottom: 10px;
-  padding:0 1em;
-}
-
-nav ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin:0;
-  width:100%;
-
-}
-
-nav li{
-  height:100%;
-  border-radius: 5px;
-  font-size: 1.5em;
-  width: 100%;
-  text-align: center;
-
-}
-
-nav li a{
-  height: 100%;
-  color:var(--dominant-colour);
-  transition:background-color 0.3s ease-in;
-  border-radius: 5px;
-}
-
-nav li a:hover{
-  background-color:#A8AABC;
-}
-
-nav li a.active{
-  background-color: var(--complementary-colour-grey);
-  border-bottom: 5px solid gray;
-}
-
-/* .intro-image{
-  flex:1;
-  width:100%;
-  height:30vh;
-}
-
-
-.intro-image img{
-  width: 100%;
-  height:30vh;
-} */
 
 .intro-image{
   flex:1;
@@ -277,11 +191,11 @@ nav li a.active{
     flex-direction: row;
     transform:translate(-7em);
     transition:transform 0.5s ease-in-out;
-    background-color: var(--complementary-colour-grey);
+    background-color: var(--dominant-colour);
   }
   
   .gh-text{
-    color:var(--dominant-colour);
+    color:var(--complementary-colour-blue);
     font-size: 1.5em;
   }
   
@@ -293,11 +207,11 @@ nav li a.active{
     flex-direction: row;
     transform:translate(-7em);
     transition:transform 0.5s ease-in-out;
-    background-color: #B1BBF3;
+    background-color: var(--dominant-colour);
   }
   
   .lk-in-text{
-    color:var(--dominant-colour);
+    color:var(--complementary-colour-blue);
     font-size: 1.5em;
   }
   
@@ -309,12 +223,12 @@ nav li a.active{
     flex-direction: row;
     transform:translate(-7em);
     transition:transform 0.5s ease-in-out;
-    background-color: #A8AABC;
+    background-color: var(--dominant-colour);
     cursor: pointer;
   }
   
   .mail-text{
-    color:var(--dominant-colour);
+    color:var(--complementary-colour-blue);
     font-size: 1.5em;
   }
   

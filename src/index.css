@@ -12,12 +12,13 @@
   --complementary-colour-torquoise:#3189A0;
   --complementary-colour-grey:#444655;
   --complemenary-colour:#B1BBF3;
+  --main-font:'EB Garamond', serif;
 }
 
 body{
   margin:0;
   background-color: var(--dominant-colour);
-  font-family: 'EB Garamond', serif;
+  font-family:var(--main-font);
 }
 
 h1{
@@ -64,18 +65,19 @@ nav li{
 nav li a{
   height: 100%;
   color:var(--dominant-colour);
-  transition:background-color 0.3s ease-in;
+  transition:color 0.3s ease-in;
   border-radius: 5px;
 }
 
 nav li a:hover{
-  background-color:#A8AABC;
+  color:#A8AABC;
 }
 
-nav li a.active{
+/* nav li a.active{
   background-color: var(--complementary-colour-grey);
+  opacity: 0.8;
   border-bottom: 5px solid gray;
-}
+} */
 
 
 @media screen and (min-width: 768px){
