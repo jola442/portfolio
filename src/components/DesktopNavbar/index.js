@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef} from "react"
 import { NavLink } from "react-router-dom"
-import NavLinks from "./NavLinks"
+import NavLinks from "../NavLinks"
 export default function Navbar() {
 
 
