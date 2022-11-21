@@ -4,5 +4,18 @@
     height: 100%;
     background-color: var(--complementary-colour-grey);
     width: 100%;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .projects.container{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        background-color: var(--complementary-colour-grey);
+        width: 100%;
+    }
+    
 }
 
