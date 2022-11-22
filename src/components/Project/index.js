@@ -27,7 +27,7 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
             <p className="value">{title}</p>
             <Link to={gitHubLink} className='source-code'>
               Source Code
-              <FaGithub />
+              <FaGithub className="gh-icon"/>
               </Link>
           </div>
    

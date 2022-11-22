@@ -9,7 +9,7 @@ export default function Home(){
     return (
         <div className='home container animate__animated'>
             <div className="intro-image">
-                <img src = "../intro-image2.jpg" alt="programming"></img>
+                <img src = "../intro-image.jpg" alt="programming"></img>
             </div>
             <div className="intro">
                 <h2>Hey there,</h2>
@@ -22,7 +22,7 @@ export default function Home(){
             </div>
 
             <div className= "contact-menu">
-                <a href={githubUrl} target="_blank">
+                <a href={githubUrl} target="_blank" rel="noreferrer noopener">
                     <div className = "gh-container">
                         <div className="gh-text">
                             Github
@@ -32,7 +32,7 @@ export default function Home(){
                 </a>
                 
               
-                <a href={linkedInUrl} target="_blank">
+                <a href={linkedInUrl} target="_blank" rel="noreferrer noopener">
       
                     <div className = "lk-in-container">
                         <div className="lk-in-text">

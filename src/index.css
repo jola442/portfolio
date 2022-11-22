@@ -19,6 +19,7 @@ body{
   margin:0;
   background-color: var(--dominant-colour);
   font-family:var(--main-font);
+
 }
 
 h1{
@@ -30,15 +31,18 @@ h1{
   display: none;
 }
 
+.mobile-nav{
+  width: 100%;
+}
+
 nav{
   background-color: var(--complementary-colour-blue);
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   position: sticky;
   top:0;
   padding-bottom: 10px;
-  padding:0 1em;
   z-index: 2;
 }
 
@@ -50,6 +54,7 @@ nav ul{
   list-style: none;
   margin:0;
   width:100%;
+  padding-left:0;
 
 }
 
@@ -71,6 +76,18 @@ nav li a{
 
 nav li a:hover{
   color:#A8AABC;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* nav li a.active{
@@ -99,6 +116,7 @@ nav li a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding:0 1em;
   }
   
   nav ul{
