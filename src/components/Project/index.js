@@ -44,18 +44,18 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
           </div>
 
           <div className='project-links'>
-            <Link to={gitHubLink} className='source-code'>
+            <a href={gitHubLink} className='source-code' target="_blank" rel="noreferrer noopener">
                 <FaGithub className="gh icon"/>
-            </Link>
+            </a>
 
-            <Link>
+            <a>
               <FaVideo className="video icon"/>
-            </Link>
+            </a>
 
             
-            <Link>
+            <a>
               <FaInfoCircle className="info icon"/>
-            </Link>
+            </a>
        
        
 

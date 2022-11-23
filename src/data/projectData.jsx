@@ -28,7 +28,7 @@ export const projects =
         description: "Robot Collision Simulator",
         gitHubLink: "https://github.com/jola442/robot-collision-simulator",
         videoLink: "https://user-images.githubusercontent.com/51683551/200935670-e896deb0-3d45-461b-b5be-67952d9fd1c7.gif",
-        tools: ["JavaFX"]
+        tools: ["C"]
     },
 
     {
