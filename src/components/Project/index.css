@@ -90,14 +90,17 @@
 }
 
 @media screen and (min-width:1280px) {
-    .project-links .icon:hover{
-        color:#B1BBF3;
+    @media (hover: hover) and (pointer: fine) {
+        .project-links .icon:hover{
+            color:#B1BBF3;
+        }
+    
+        .project-container:hover{
+            scale:1.1;
+            cursor: pointer;
+        }
     }
 
-    .project-container:hover{
-        scale:1.1;
-        cursor: pointer;
-    }
 }
 
 
