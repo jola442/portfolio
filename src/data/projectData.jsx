@@ -4,8 +4,7 @@ export const projects =
     {
         id: uuidv4(),
         title:"Movie Database Platform",
-        imglink:/*"https://user-images.githubusercontent.com/51683551/200951609-039049b7-1d93-4802-aee4-7e900a7a2212.png"*/
-        "n/a",
+        imglink:"https://user-images.githubusercontent.com/51683551/200951609-039049b7-1d93-4802-aee4-7e900a7a2212.png",
         description: "Movie Database Platform",
         gitHubLink: "https://github.com/jola442/movie-database",
         videoLink: "N/A",

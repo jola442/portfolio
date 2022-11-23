@@ -124,6 +124,7 @@ nav li a:hover{
     flex-direction: row;
     gap:5em;
     width: auto;
+    padding: 0;
   }
 
   nav li{
