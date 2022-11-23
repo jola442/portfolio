@@ -13,11 +13,6 @@
     max-width: 400px;
 }
 
-.project-container:hover{
-    scale:1.1;
-    cursor: pointer;
-}
-
 .project-info-container{
     display: flex;
     flex-direction: column;
@@ -89,15 +84,22 @@
 }
 
 .project-links .icon{
-    /* align-self: flex-end; */
     color:var(--dominant-colour);
     font-size: 1.5em;
     transition: color 0.3s ease-in;
 }
 
-.project-links .icon:hover{
-    color:#B1BBF3;
+@media screen and (min-width:1280px) {
+    .project-links .icon:hover{
+        color:#B1BBF3;
+    }
+
+    .project-container:hover{
+        scale:1.1;
+        cursor: pointer;
+    }
 }
+
 
 /*
 .project-details-container{

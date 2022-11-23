@@ -17,6 +17,7 @@
 .intro{
   flex:0.5;
   text-align: center;
+  padding:20px;
 }
 
 
@@ -43,6 +44,7 @@
   display: flex;
   justify-content: space-evenly;
   animation:backInRight 2s;
+  margin:20px;
 }
 
 .contact-menu .icon{
@@ -52,7 +54,6 @@
   align-items: center;
   padding:0.1em;
   font-size: 3em;
-
 }
 
 .gh-container{
@@ -70,9 +71,6 @@
   font-size: 1.5em;
 }
 
-.gh-container:hover{
-  transform:translate(0);
-}
 
 .lk-in-container{
   display: flex;
@@ -88,9 +86,6 @@
   font-size: 1.5em;
 }
 
-.lk-in-container:hover{
-  transform:translate(0);
-}
 
 .mail-container{
   display: flex;
@@ -106,9 +101,6 @@
   font-size: 1.5em;
 }
 
-.mail-container:hover{
-  transform:translate(0);
-}
 
 .logo{
   width: 50%;
@@ -125,7 +117,7 @@
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1280px){
   .mobile-nav{
     display: none;
   }
@@ -187,6 +179,7 @@
     flex-direction: column;
     position:absolute;
     animation:shakeX 2s 2s;
+    margin:0;
   }
   
   .gh-container{
@@ -237,4 +230,13 @@
   .mail-container:hover{
     transform:translate(0);
   }
+
+  .view-work{
+    transition: scale 0.3s ease-in-out;
+  }
+
+  .view-work:hover{
+    scale:1.05;
+  }
+
 }

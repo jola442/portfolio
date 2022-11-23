@@ -74,10 +74,6 @@ nav li a{
   border-radius: 5px;
 }
 
-nav li a:hover{
-  color:#A8AABC;
-}
-
 .logo{
   display: flex;
   justify-content: flex-start;
@@ -97,7 +93,7 @@ nav li a:hover{
 } */
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1280px){
   .mobile-nav{
     display: none;
   }
@@ -129,5 +125,9 @@ nav li a:hover{
 
   nav li{
     width: auto;
+  }
+
+  nav li a:hover{
+    color:#A8AABC;
   }
 }
