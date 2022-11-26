@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaInfoCircle, FaGithub, FaVideo } from "react-icons/fa"
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+// import { Link } from 'react-router-dom'
+// import { useState } from 'react'
+import DOMPurify from 'dompurify'
 import "./index.css"
 
 function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) {
@@ -17,11 +18,34 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
   //   setDescriptionButtonClicked(false);
   // }
 
+  function parseTitle(title){
+    console.log("I ran");
+    let newTitle = "";
+    newTitle += title[0].toLowerCase();
+
+    for(let i = 1; i < title.length; i++){
+      if(title[i-1]==" "){
+        newTitle += title[i].toLowerCase();
+      }
+
+      else{
+        newTitle += title[i];
+      }
+    }
+
+    newTitle = newTitle.replace(/\s/g, "-");
+
+    // console.log("Final:",newTitle)
+    return newTitle;
+  }
+
+  console.log(parseTitle("Movie Database Platform"))
+
   return (
     <div className='project-container'>
         <div className='project-info-container'>
           <div className='project-info-image' /*style={{backgroundImage: "url(" + imgLink + ")"}}*/>
-            <img src={imgLink}></img>
+            <img className = {parseTitle(title)} src={imgLink}></img>
           </div>
 
           <div className="project-info-text">
@@ -29,13 +53,9 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
                 <h3 className="title">{title}</h3>
                 <p className="date">Sept 2020 - Dec 2021</p>
                 <div className='tools'>
-                  <div className='tool'>Github</div>
-                  <div className='tool'>MongoDB</div>
-                  <div className='tool'>Nodejs</div>
-                  <div className='tool'>Mongoose</div>
-                  <div className='tool'>HTML</div>
-                  <div className='tool'>CSS</div>
-                  <div className='tool'>React</div>
+                  {tools.map( (tool) =>{return (
+                  <div className='tool' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tool.name)}}>  
+                  </div>)})}
                 </div>
               </div>
               <div className='summary'>
@@ -48,9 +68,9 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
                 <FaGithub className="gh icon"/>
             </a>
 
-            <a>
+            {videoLink && <a href={videoLink}>
               <FaVideo className="video icon"/>
-            </a>
+            </a> }
 
             
             <a>

@@ -22,8 +22,10 @@
 }
 
 .project-info-image{
-    height:10em;
+    display: inline-block;
+    text-align: center;
     overflow: hidden;
+    /* height: fit-content; */
     width: 100%;
     height:20em;
 }
@@ -36,6 +38,11 @@
     height:100%;
     width: 100%;
 }
+
+img.cranial-electrical-stimulation-device-simulation{
+    object-fit: contain;
+}
+
 
 
 .project-info-text{
