@@ -86,9 +86,7 @@ nav li a{
   align-items: center;
 }
 
-.root{
-  /* width:100vw;
-  position:fixed; */
+#root{
   overflow-x:hidden;
 }
 
