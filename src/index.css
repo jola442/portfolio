@@ -87,8 +87,9 @@ nav li a{
 }
 
 .root{
-  width:100vw;
-  position:fixed;
+  /* width:100vw;
+  position:fixed; */
+  overflow-x:hidden;
 }
 
 .container{
