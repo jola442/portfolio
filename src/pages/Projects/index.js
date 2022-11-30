@@ -4,6 +4,11 @@ import Project from "../../components/Project"
 
 export default function Projects(){
     return(
+        <>
+        <div className="page-title">
+            <h1>Projects</h1>
+
+        </div>
         <div className='projects container animate__animated'>
             {projects.map( (project) =>{
                 return <Project
@@ -18,5 +23,6 @@ export default function Projects(){
                 </Project>
             })}
         </div>
+        </>
     )
 }
