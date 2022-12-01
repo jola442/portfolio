@@ -22,12 +22,12 @@
 .intro{
   flex:0.5;
   text-align: center;
-  padding:20px;
+  padding:2.5em;
 }
 
 
 .view-work{
-  width:20em;
+  width:10em;
   height:2.5em;
   border-radius: 20px;
   background-color: var(--complementary-colour-blue);
@@ -36,6 +36,7 @@
   font-family: 'EB Garamond', serif;
   cursor: pointer;
   border: none;
+  margin:2.5em;
 }
 
 
@@ -49,7 +50,8 @@
   display: flex;
   justify-content: space-evenly;
   animation:backInRight 2s;
-  margin:20px;
+  margin:2.5em;
+  width:100%;
 }
 
 .contact-menu .icon{
@@ -66,9 +68,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width:10em;
+  /* width:10em; */
   cursor: pointer;
   color: var(--complementary-colour-blue);
+  padding:0.5em;
 }
 
 .gh-text{
@@ -82,8 +85,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width:10em;
+  /* width:10em; */
   cursor: pointer;
+  padding:0.5em;
 }
 
 .lk-in-text{
@@ -97,8 +101,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width:10em;
+  /* width:10em; */
   cursor: pointer;
+  padding:0.5em;
 }
 
 .mail-text{
@@ -185,6 +190,7 @@
     position:absolute;
     animation:shakeX 2s 2s;
     margin:0;
+    width: auto;
   }
   
   .gh-container{
@@ -192,6 +198,8 @@
     transform:translate(-7em);
     transition:transform 0.5s ease-in-out;
     background-color: var(--dominant-colour);
+    width:10em;
+    padding:0;
   }
   
   .gh-text{
@@ -208,6 +216,7 @@
     transform:translate(-7em);
     transition:transform 0.5s ease-in-out;
     background-color: var(--dominant-colour);
+    padding:0;
   }
   
   .lk-in-text{
@@ -225,6 +234,8 @@
     transition:transform 0.5s ease-in-out;
     background-color: var(--dominant-colour);
     cursor: pointer;
+    width:10em;
+    padding:0;
   }
   
   .mail-text{
@@ -234,6 +245,7 @@
   
   .mail-container:hover{
     transform:translate(0);
+    width:10em;
   }
 
   .view-work{

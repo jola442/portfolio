@@ -33,7 +33,6 @@ h1{
 
 .mobile-nav{
   width: 100%;
-  position:relative;
 }
 
 nav{
@@ -41,8 +40,8 @@ nav{
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: sticky;
-  top:0;
+  position: fixed;
+  width:100%;
   /* padding-bottom: 10px; */
   z-index: 2;
 }
@@ -59,6 +58,7 @@ nav ul{
   position:absolute;
   top:100%;
   background-color: var(--complementary-colour-blue);
+  z-index: 3;
 }
 
 nav li{

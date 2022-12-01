@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+@import "animate.css";
+
+
+.contact-me.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    height: 100vh;
+  }
+

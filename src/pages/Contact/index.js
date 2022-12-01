@@ -1,3 +1,8 @@
+import "./index.css"
 export default function Contact(){
-    return <h1>Contact Me</h1>
+    return <>
+    <div className="contact-me container animate__animated">
+        <h1>Contact Me</h1>
+    </div>
+    </>
 }
