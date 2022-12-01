@@ -33,6 +33,7 @@ h1{
 
 .mobile-nav{
   width: 100%;
+  position:relative;
 }
 
 nav{
@@ -55,7 +56,9 @@ nav ul{
   margin:0;
   width:100%;
   padding-left:0;
-
+  position:absolute;
+  top:100%;
+  background-color: var(--complementary-colour-blue);
 }
 
 nav li{
@@ -129,6 +132,7 @@ nav li a{
     gap:5em;
     width: auto;
     padding: 0;
+    position:relative;
   }
 
   nav li{

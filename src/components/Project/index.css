@@ -27,7 +27,7 @@
     overflow: hidden;
     /* height: fit-content; */
     width: 100%;
-    height:20em;
+    height:15em;
 }
 
 .project-info-image > img{
@@ -105,6 +105,102 @@ img.cranial-electrical-stimulation-device-simulation{
         .project-container:hover{
             scale:1.1;
             cursor: pointer;
+        }
+
+        .project-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 5px 10px 18px gray; */
+            border: none;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+            font-size: 20px;
+            transition: scale 0.3s ease-in;
+            animation:zoomIn 2s;
+            max-width: 400px;
+        }
+        
+        .project-info-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .project-info-image{
+            display: inline-block;
+            text-align: center;
+            overflow: hidden;
+            /* height: fit-content; */
+            width: 100%;
+            height:15em;
+        }
+        
+        .project-info-image > img{
+            display: block;
+            aspect-ratio: 16 / 9;
+            object-position: center;
+            object-fit: cover;
+            height:100%;
+            width: 100%;
+        }
+        
+        img.cranial-electrical-stimulation-device-simulation{
+            object-fit: contain;
+        }
+        
+        
+        
+        .project-info-text{
+            width: 100%;
+            background-color:var(--complementary-colour-blue);
+            text-align: center;
+        }
+        
+        .title-and-date{
+            width: 100%;
+            /* border-bottom: 2px solid gray; */
+            color:var(--dominant-colour);
+        }
+        
+        .date{
+            color:black;
+        }
+        
+        .summary{
+            width: 100%;
+            background-color: var(--dominant-colour);
+        }
+        
+        .tools{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .tool{
+            background-color: var(--dominant-colour);
+            color:black;
+            border-radius: 2px;
+            padding: 0.25em;
+            margin:0.25em;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+        }
+        
+        .project-links{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color:var(--complementary-colour-blue);
+            color:var(--dominant-colour);
+        }
+        
+        .project-links .icon{
+            color:var(--dominant-colour);
+            font-size: 1.5em;
+            transition: color 0.3s ease-in;
         }
     }
 
