@@ -96,6 +96,13 @@ img.cranial-electrical-stimulation-device-simulation{
     transition: color 0.3s ease-in;
 }
 
+@media screen and (min-width:375px){
+    .project-container{
+        font-size: 15px;
+        width:20em;
+    }
+}
+
 @media screen and (min-width:1280px) {
     @media (hover: hover) and (pointer: fine) {
         .project-links .icon:hover{
