@@ -66,7 +66,7 @@
   font-size: 3em;
 }
 
-.gh-container{
+.icon-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,48 +78,10 @@
   padding-top:0.5em;
 }
 
-.gh-text{
+.icon-text{
   color:var(--complementary-colour-blue);
   font-size: 1.5em;
 }
-
-
-.lk-in-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 100%;
-  cursor: pointer;
-  padding-top:0.5em;
-}
-
-.lk-in-text{
-  color:var(--complementary-colour-blue);
-  font-size: 1.5em;
-  /* width: 0;
-  min-width: 100%; */
-}
-
-
-.mail-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  /* width:10em; */
-  cursor: pointer;
-  padding-top:0.5em;
-  width: 0;
-  min-width: 100%;
-
-}
-
-.mail-text{
-  color:var(--complementary-colour-blue);
-  font-size: 1.5em;
-}
-
 
 .logo{
   width: 50%;
@@ -205,43 +167,17 @@
     width: auto;
   }
   
-  .gh-container{
-    flex-direction: row;
-    transform:translate(-7em);
-    transition:transform 0.5s ease-in-out;
-    background-color: var(--dominant-colour);
+  .icon-text{
+    color:var(--complementary-colour-blue);
+    font-size: 1.5em;
+  }
+  
+  .icon-container:hover{
+    transform:translate(0);
     width:10em;
-    padding:0;
   }
-  
-  .gh-text{
-    color:var(--complementary-colour-blue);
-    font-size: 1.5em;
-  }
-  
-  .gh-container:hover{
-    transform:translate(0);
-  }
-  
-  .lk-in-container{
-    flex-direction: row;
-    transform:translate(-7em);
-    transition:transform 0.5s ease-in-out;
-    background-color: var(--dominant-colour);
-    padding:0;
-    width: 10em;
-  }
-  
-  .lk-in-text{
-    color:var(--complementary-colour-blue);
-    font-size: 1.5em;
-  }
-  
-  .lk-in-container:hover{
-    transform:translate(0);
-  }
-  
-  .mail-container{
+
+  .icon-container{
     flex-direction: row;
     transform:translate(-7em);
     transition:transform 0.5s ease-in-out;
@@ -251,16 +187,6 @@
     padding:0;
   }
   
-  .mail-text{
-    color:var(--complementary-colour-blue);
-    font-size: 1.5em;
-  }
-  
-  .mail-container:hover{
-    transform:translate(0);
-    width:10em;
-  }
-
   .view-work{
     transition: scale 0.3s ease-in-out;
   }

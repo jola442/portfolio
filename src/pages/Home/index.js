@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import "./index.css"
 
@@ -6,6 +6,7 @@ export default function Home(){
     const githubUrl = "https://github.com/jola442";
     const linkedInUrl = "https://www.linkedin.com/in/jola-ajayi-083604216/"
     const email = "mailto:benjamen.ajayi@gmail.com"
+    const resume = "./Jola Ajayi's Resume.pdf"
     return (
         <div className='home container animate__animated'>
             <div className="intro-image">
@@ -23,8 +24,8 @@ export default function Home(){
 
             <div className= "contact-menu">
                 <a href={githubUrl} target="_blank" rel="noreferrer noopener">
-                    <div className = "gh-container">
-                        <div className="gh-text">
+                    <div className = "gh icon-container">
+                        <div className="gh icon-text">
                             Github
                         </div>
                         <FaGithub className="gh icon"/>      
@@ -34,24 +35,31 @@ export default function Home(){
               
                 <a href={linkedInUrl} target="_blank" rel="noreferrer noopener">
       
-                    <div className = "lk-in-container">
-                        <div className="lk-in-text">
+                    <div className = "lk-in icon-container">
+                        <div className="lk-in icon-text">
                             LinkedIn
                         </div>
                         <FaLinkedin className="lk-in icon"/>
                     </div>
                 </a>
                  
-                <a href={email}>
-                    <div className="mail-container">
-                        <div className="mail-text">
+                <a href={email} target="_blank" rel="noreferrer noopener">
+                    <div className="mail icon-container">
+                        <div className="mail icon-text">
                             Email
                         </div>   
                         <FaEnvelope className="mail icon"/> 
                     </div>
                 </a>
   
-                    {/* <div>Download Resume</div> */}
+                <a href={resume} target="_blank" rel="noreferrer noopener">
+                    <div className="resume icon-container">
+                        <div className="resume icon-text">
+                            Resume
+                        </div>   
+                        <FaFilePdf className="resume icon"/> 
+                    </div>
+                </a>
                 </div>
        </div>
     )
