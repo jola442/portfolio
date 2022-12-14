@@ -75,7 +75,7 @@
   min-width: 100%;
   cursor: pointer;
   color: var(--complementary-colour-blue);
-  padding:0.5em;
+  padding-top:0.5em;
 }
 
 .gh-text{
@@ -109,7 +109,7 @@
   align-items: center;
   /* width:10em; */
   cursor: pointer;
-  padding:0.5em;
+  padding-top:0.5em;
   width: 0;
   min-width: 100%;
 

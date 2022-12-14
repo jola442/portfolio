@@ -35,7 +35,7 @@
     display: block;
     aspect-ratio: 16 / 9;
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
     height:100%;
     width: 100%;
 }

@@ -1,25 +1,24 @@
 import React from 'react'
 import { FaInfoCircle, FaGithub, FaVideo } from "react-icons/fa"
-// import { Link } from 'react-router-dom'
-// import { useState } from 'react'
+import {v4 as uuidv4} from "uuid";
+import { useState } from 'react'
 import DOMPurify from 'dompurify'
 import "./index.css"
+import Modal from "../Modal"
 
 function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) {
 
-  // const [videoButtonClicked, setVideoButtonClicked] = useState(false);
-  // const [descriptionButtonClicked, setDescriptionButtonClicked] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  // function showDescription(){
-  //   setDescriptionButtonClicked(true);
-  // }
+  function openModal(){
+    setModalIsOpen(true);
+  }
 
-  // function showVideo(){
-  //   setDescriptionButtonClicked(false);
-  // }
+  function closeModal(){
+    setModalIsOpen(false);
+  }
 
   function parseTitle(title){
-    console.log("I ran");
     let newTitle = "";
     newTitle += title[0].toLowerCase();
 
@@ -35,14 +34,14 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
 
     newTitle = newTitle.replace(/\s/g, "-");
 
-    // console.log("Final:",newTitle)
+    
     return newTitle;
   }
 
-  console.log(parseTitle("Movie Database Platform"))
 
   return (
-    <div className='project-container'>
+    <>
+        <div className='project-container' onClick={openModal}>
         <div className='project-info-container'>
           <div className='project-info-image' /*style={{backgroundImage: "url(" + imgLink + ")"}}*/>
             <img className = {parseTitle(title)} src={imgLink}></img>
@@ -54,7 +53,7 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
                 <p className="date">Sept 2020 - Dec 2021</p>
                 <div className='tools'>
                   {tools.map( (tool) =>{return (
-                  <div className='tool' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tool.name)}}>  
+                  <div key={uuidv4()} className='tool' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tool.name)}}>  
                   </div>)})}
                 </div>
               </div>
@@ -64,17 +63,17 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
           </div>
 
           <div className='project-links'>
-            <a href={gitHubLink} className='source-code' target="_blank" rel="noreferrer noopener">
+            <a href={gitHubLink} className='source-code' target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
                 <FaGithub className="gh icon"/>
             </a>
 
-            {videoLink && <a href={videoLink}>
+            {videoLink && <a href={videoLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
               <FaVideo className="video icon"/>
             </a> }
 
             
             <a>
-              <FaInfoCircle className="info icon"/>
+              <FaInfoCircle onClick={openModal} className="info icon"/>
             </a>
        
        
@@ -83,27 +82,20 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
 
    
         </div>
-        {/* <div className="project-details-container">
-            <div className='project-buttons'>
-              <button className='description-button' onClick={showDescription}>Description</button>
-            <div/>
-              <button className='video-button' onClick={showVideo}>Video</button>
-            </div>
-  
-            {descriptionButtonClicked && <div className='project-description'>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus unde recusandae accusantium obcaecati quam vitae cupiditate vero facilis quod animi veritatis eligendi neque suscipit numquam iste atque architecto, enim tenetur minus consectetur aspernatur officia ex. Aperiam, aspernatur! Architecto, id doloribus?</p>
-            </div>}
-
-            {!descriptionButtonClicked &&<div className='project-video'>
-              <video controls>
-                <source src= {videoLink} type="video/mp4"></source>
-                Your browser does not support this video
-              </video>
-            </div>
-            }
-        </div> */}
+      
+   
 
     </div>
+      {modalIsOpen && <Modal title={title} imgLink={imgLink} description={description} tools={tools} isOpen = {modalIsOpen} closeModal={closeModal}/>}
+    </>                   
+    //  key = {project.id}
+    // title = {project.title}
+    // imgLink = {project.imglink}
+    // description = {project.description}
+    // gitHubLink = {project.gitHubLink}
+    // videoLink = {project.videoLink}
+    // tools = {project.tools}
+  
   )
 }
 
