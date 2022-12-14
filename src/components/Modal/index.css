@@ -14,19 +14,16 @@
 }
 
 .modal-container{
-    /* margin-top: 10em; */
     animation:fadeInDown 0.5s;
-    /* width: 50%;
-    left:25%; */
-    /* height: 70%; */
+    width: 80%;
     background-color:var(--dominant-colour);
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
     z-index: 6;
-    /* overflow-y: scroll; */
+    overflow-y: auto;
 }
 
 .modal-container .title{
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0;
     color:var(--dominant-colour);
 }
@@ -38,7 +35,7 @@
     top:0;
     color:var(--dominant-colour);
     padding-right: 0.5em;
-    font-size: 0.5em;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -82,7 +79,7 @@
 .modal-container .tool{
     background-color: var(--complementary-colour-blue);
     color: var(--dominant-colour);
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 .modal-container .tools{
