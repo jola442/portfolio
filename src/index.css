@@ -42,6 +42,8 @@ h1{
   background-color:var(--complementary-colour-blue);
   color:var(--dominant-colour);
   padding: 0;
+  margin: 0;
+  top:1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
