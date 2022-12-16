@@ -14,14 +14,27 @@
     overflow-y: scroll;
 }
 
+
 .modal-container{
-    margin-top: 60em;
+    position: absolute;
+    top: 20%;
     animation:fadeInDown 0.5s;
     width: 90%;
     background-color:var(--dominant-colour);
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
     z-index: 6;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.modal-overlay::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .modal-overlay {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 .modal-container .title{
     font-size: 1.5em;
@@ -87,6 +100,16 @@
     border-bottom: 2px solid lightgray;
 }
 
+
+@media screen and (min-width: 768px){
+    .modal-container{
+        width: 80%;
+    }
+
+    
+}
+
+
 @media screen and (min-width: 1280px){
     .close-button:hover{
         cursor: pointer;
@@ -120,17 +143,23 @@
         right:0;
         left:0;
         z-index: 5;
-        overflow-y: visible;
+        overflow-y: scroll;
+    }
+
+    .modal-overlay::-webkit-scrollbar{
+        display: none;
     }
     
     .modal-container{
-        position: fixed;
+        position: absolute;
+        top:20%;
         animation:fadeInDown 0.5s;
         width: 50%;
         background-color:var(--dominant-colour);
         box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
         z-index: 6;
         overflow-y: auto;
+        
     }
     
     .modal-container .title{
