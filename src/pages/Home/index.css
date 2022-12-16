@@ -71,7 +71,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 0;
   min-width: 100%;
   cursor: pointer;
   color: var(--complementary-colour-blue);
