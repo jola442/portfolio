@@ -37,10 +37,16 @@ h1{
 }
 
 .mobile-navList{
+  position:absolute;
+  width:100%;
+  background-color:var(--complementary-colour-blue);
+  color:var(--dominant-colour);
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .mobile-navList a{

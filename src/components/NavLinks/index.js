@@ -4,10 +4,6 @@ import { NavLink } from "react-router-dom"
 export default function NavLinks( {isMobile, isVisible}) {
 
   const visibleNavLinkStyle = {
-    position:"absolute",
-    width:"100%",
-    backgroundColor:"var(--complementary-colour-blue)",
-    color:"var(--dominant-colour)",
     transform:"translateY(50%)",
     transition:"transform 0.5s ease-in-out"
   }
