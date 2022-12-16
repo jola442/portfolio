@@ -37,7 +37,7 @@ h1{
 }
 
 .mobile-navList{
-  position:absolute;
+  position:fixed;
   width:100%;
   background-color:var(--complementary-colour-blue);
   color:var(--dominant-colour);
