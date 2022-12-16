@@ -12,6 +12,7 @@ export default function MobileNavbar() {
     }
 
   return (
+    <>
     <nav className="mobile-nav">
         <div className="logo">
             <NavLink to = "/">
@@ -21,8 +22,12 @@ export default function MobileNavbar() {
         <div className="bars-icon" onClick={showNavLinks}>
             <FaBars/>
         </div>
-        {navLinksVisible && <NavLinks/>}
+        {/* {navLinksVisible && <NavLinks/>} */}
     </nav>
+    <NavLinks isMobile={true} isVisible={navLinksVisible}></NavLinks>
+    </>
+
+    
   )
 }
 
