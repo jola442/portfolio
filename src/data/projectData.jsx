@@ -17,7 +17,7 @@ export const projects =
         imglink:"https://user-images.githubusercontent.com/51683551/203725522-bda4f9f6-0c13-40a0-b2fe-212babf1f2f0.png",
         description: "Cranial Electrical Stimulation Device Simulation",
         gitHubLink: "https://github.com/jola442/cranial-electrical-stimulation-device-simulation",
-        videoLink: "https://user-images.githubusercontent.com/51683551/200963494-55d36497-0e5e-466a-955d-7f93338343a3.webm",
+        videoLink: "https://user-images.githubusercontent.com/51683551/208214202-be5ba9e8-78d2-4aaa-81ae-288e74bfd72f.mp4",
         tools: [{id:uuidv4(), name:"Qt C++"}, {id:uuidv4(), name:"Github"}]
     },
 
@@ -37,7 +37,7 @@ export const projects =
         imglink:"https://user-images.githubusercontent.com/51683551/202927498-984c8a1c-fc4f-4b3b-a2eb-71bac75b104e.png",
         description: "Electronics Store Application",
         gitHubLink: "https://github.com/jola442/electronic-store-app",
-        videoLink: "https://user-images.githubusercontent.com/51683551/200959025-fcac5828-865a-46cb-ab55-499e6dc61457.webm",
+        videoLink: "https://user-images.githubusercontent.com/51683551/208212163-90bf984d-f966-43dc-92e8-d11d8f1deca6.mp4",
         tools: [{id:uuidv4(), name:"JavaFX"}, {id:uuidv4(), name:"Github"}]
     },
 ]
