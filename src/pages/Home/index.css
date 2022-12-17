@@ -5,7 +5,7 @@
 .intro-image{
   flex:1;
   width: 100%;
-  animation: fadeIn 2s;
+  animation: slideInDown 2s;
   margin-top: 64px;
 }
 
