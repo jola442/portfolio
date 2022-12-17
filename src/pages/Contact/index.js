@@ -1,5 +1,5 @@
 import "./index.css"
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
+import { FaEnvelope, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import { useRef } from "react";
 import emailjs from '@emailjs/browser'
 
@@ -69,6 +69,16 @@ export default function Contact(){
 
                         <div className="mail contact-text">
                             benjamen.ajayi@gmail.com
+                        </div>
+                    </div>
+
+                    <div className="lk-in contact-container">
+                        <div className="lk-in icon">
+                            <FaLinkedin/>
+                        </div>
+
+                        <div className="lk-in contact-text">
+                            Jola Ajayi
                         </div>
                     </div>
 
