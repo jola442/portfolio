@@ -26,6 +26,7 @@
   text-align: center;
   padding-left:2.5em;
   padding-right:2.5em;
+  animation: slideInRight 2s;
 }
 
 
