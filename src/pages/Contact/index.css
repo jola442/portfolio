@@ -10,6 +10,7 @@
   position: absolute;
   height: 100vh;
   animation: slideInDown 1.5s;
+  padding-bottom: 0.5em;
 }
 
 .contact-me.container .page-title{
@@ -27,7 +28,6 @@
   padding: 2.5%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
   margin-top: 6em;
-  padding-bottom: 0.5em;
 }
 
 .form-input{
