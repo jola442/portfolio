@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useState, useEffect, useRef} from "react"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaTimes } from "react-icons/fa"
 import NavLinks from "../NavLinks"
-
 
 export default function MobileNavbar() {
     const [navLinksVisible, setNavLinksVisible] = useState(false);
@@ -19,9 +18,13 @@ export default function MobileNavbar() {
                 <img src="../../logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
             </NavLink>
         </div>
-        <div className="bars-icon" onClick={showNavLinks}>
+        {!navLinksVisible && <div className="bars nav-icon" onClick={showNavLinks}>
             <FaBars/>
-        </div>
+        </div>}
+
+        {navLinksVisible &&<div className="x nav-icon" onClick={showNavLinks}>
+            <FaTimes/>
+        </div>}
         {/* {navLinksVisible && <NavLinks/>} */}
     </nav>
     <NavLinks isMobile={true} isVisible={navLinksVisible}></NavLinks>

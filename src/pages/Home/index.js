@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import "./index.css"
+import MobileNavbar from "../../components/MobileNavbar";
 
 export default function Home(){
     const githubUrl = "https://github.com/jola442";
@@ -8,7 +9,9 @@ export default function Home(){
     const email = "mailto:benjamen.ajayi@gmail.com"
     const resume = "./Jola Ajayi's Resume.pdf"
     return (
-        <div className='home container animate__animated'>
+        <>
+            <MobileNavbar/>
+            <div className='home container animate__animated'>
             <div className="intro-image">
                 <img src = "../intro-image.jpg" alt="programming"></img>
             </div>
@@ -62,5 +65,7 @@ export default function Home(){
                 </a>
                 </div>
        </div>
+        </>
+        
     )
 }

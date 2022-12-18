@@ -1,10 +1,12 @@
 import "./index.css"
 import { projects} from "../../data/projectData"
 import Project from "../../components/Project"
+import MobileNavbar from "../../components/MobileNavbar"
 
 export default function Projects(){
     return(
         <>
+        <MobileNavbar/>
         <div className="page-title">
             <h1>Projects</h1>
 

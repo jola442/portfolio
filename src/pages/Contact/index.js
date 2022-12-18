@@ -2,6 +2,7 @@ import "./index.css"
 import { FaEnvelope, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import { useRef } from "react";
 import emailjs from '@emailjs/browser'
+import MobileNavbar from "../../components/MobileNavbar";
 
 
 export default function Contact(){
@@ -26,6 +27,7 @@ export default function Contact(){
 
     return (
     <>
+        <MobileNavbar/>
         <div className="page-title">
             <h1>Contact Me</h1>
         </div>

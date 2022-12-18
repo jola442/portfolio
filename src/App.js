@@ -10,7 +10,6 @@ function App() {
     <>
     {/* CSS toggles what navbar shows (mobile or desktop) */}
       <DesktopNavbar />
-      <MobileNavbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Contact" element={<Contact/>}/>

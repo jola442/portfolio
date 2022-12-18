@@ -87,15 +87,6 @@
   width: 50%;
 }
 
-.bars-icon{
-  color:var(--dominant-colour);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 50%;
-  font-size: 2em;
-}
-
 /* a.contact-menu{
   width: 7.5em;
 } */

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 export default function NavLinks( {isMobile, isVisible}) {
 
   const visibleNavLinkStyle = {
-    transform:"translateY(50%)",
+    transform:"translateY(0)",
     transition:"transform 0.5s ease-in-out"
   }
 

@@ -192,6 +192,12 @@
     height: 10%;
     border: none;
     margin:2.5% 0 2.5% 0;
+    transition: scale 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .form-input input[type="submit"]:hover{
+    scale:1.05;
   }
 
   .contact-details{
