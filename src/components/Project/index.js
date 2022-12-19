@@ -42,12 +42,11 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
   return (
     <>
         <div className='project-container' onClick={openModal}>
-        <div className='project-info-container'>
-          <div className='project-info-image' /*style={{backgroundImage: "url(" + imgLink + ")"}}*/>
+          <div className='project-image' /*style={{backgroundImage: "url(" + imgLink + ")"}}*/>
             <img className = {parseTitle(title)} src={imgLink}></img>
           </div>
 
-          <div className="project-info-text">
+          <div className="project-text">
               <div className='title-and-date'>
                 <h3 className="title">{title}</h3>
                 <p className="date">Sept 2020 - Dec 2021</p>
@@ -79,11 +78,6 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
        
 
           </div>
-
-   
-        </div>
-      
-   
 
     </div>
       {modalIsOpen && <Modal title={title} imgLink={imgLink} description={description} tools={tools} isOpen = {modalIsOpen} closeModal={closeModal}/>}

@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   width:100vw;
-  position: absolute;
   height: 100vh;
   animation: slideInDown 1.5s;
   padding-bottom: 0.5em;
@@ -19,12 +18,11 @@
 }
 
 .contact-me.container form{
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 75%;
-  height: 65vh;
+  width: 50vw;
+  height: 70vh;
   padding: 2.5%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
   margin-top: 6em;
@@ -33,9 +31,8 @@
 .form-input{
   display: flex;
   flex-direction: column;
-  position: absolute;
   top: 2.5%;
-  width: 92.5%;
+  width: 100%;
   height: 60%;
   font-family: var(--main-font);
 }
@@ -78,13 +75,12 @@
   color:var(--dominant-colour);
   font-size: 1em;
   font-family: var(--main-font);
-  height: 10%;
+  height: 15%;
   border: none;
   margin:1.25% 0 1.25% 0;
 }
 
 .contact-details{
-  position: absolute;
   top: 60%;
   display: flex;
   flex-direction: column;
@@ -120,7 +116,6 @@
     justify-content: center;
     align-items: center;
     width:100vw;
-    position: absolute;
     height: 100vh;
   }
 
@@ -130,13 +125,11 @@
   }
 
   .contact-me.container form{
-    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    height: 70vh;
     padding: 2.5%;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
     margin-top: 7.5em;
@@ -145,7 +138,6 @@
   .form-input{
     display: flex;
     flex-direction: column;
-    position: absolute;
     top: 2.5%;
     width: 50%;
     height: 92.6%;
@@ -205,13 +197,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top:0;
+    align-self: flex-start;
     margin: 0 0 0 2.5%;
-    left:50%;
-    width: 50%;
+    left: 50%;
+    width: 45%;
     height: 70%;
-    padding:0 0 0 2.5%;
     font-size: 2em;
   }
 

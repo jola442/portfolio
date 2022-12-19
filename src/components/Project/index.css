@@ -2,10 +2,12 @@
 
 .project-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 5px 10px 18px gray; */
     border: none;
+    overflow: hidden;
+    border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
     font-size: 20px;
     transition: scale 0.3s ease-in;
@@ -14,15 +16,7 @@
     z-index: 0;
 }
 
-.project-info-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.project-info-image{
+.project-image{
     display: inline-block;
     text-align: center;
     overflow: hidden;
@@ -31,7 +25,7 @@
     height:15em;
 }
 
-.project-info-image > img{
+.project-image > img{
     display: block;
     aspect-ratio: 16 / 9;
     object-position: center;
@@ -46,7 +40,7 @@ img.cranial-electrical-stimulation-device-simulation{
 
 
 
-.project-info-text{
+.project-text{
     width: 100%;
     background-color:var(--complementary-colour-blue);
     text-align: center;
@@ -89,6 +83,7 @@ img.cranial-electrical-stimulation-device-simulation{
     width: 100%;
     background-color:var(--complementary-colour-blue);
     color:var(--dominant-colour);
+    padding:0.5em;
 }
 
 .project-links .icon{
@@ -117,6 +112,7 @@ img.cranial-electrical-stimulation-device-simulation{
 
         .project-container{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             /* box-shadow: 5px 10px 18px gray; */
@@ -127,16 +123,9 @@ img.cranial-electrical-stimulation-device-simulation{
             animation:zoomIn 2s;
             max-width: 400px;
         }
+
         
-        .project-info-container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        
-        .project-info-image{
+        .project-image{
             display: inline-block;
             text-align: center;
             overflow: hidden;
@@ -145,7 +134,7 @@ img.cranial-electrical-stimulation-device-simulation{
             height:15em;
         }
         
-        .project-info-image > img{
+        .project-image > img{
             display: block;
             aspect-ratio: 16 / 9;
             object-position: center;
@@ -160,7 +149,7 @@ img.cranial-electrical-stimulation-device-simulation{
         
         
         
-        .project-info-text{
+        .project-text{
             width: 100%;
             background-color:var(--complementary-colour-blue);
             text-align: center;
@@ -213,261 +202,3 @@ img.cranial-electrical-stimulation-device-simulation{
     }
 
 }
-
-
-/*
-.project-details-container{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    padding: 0;
-    height: 100%;
-    animation:zoomInDown 2s;
-}
-
-.project-description{
-    display: grid;
-    z-index: 1;
-    grid-template-columns: 1fr;
-    width: 75%;
-    height: 15em;
-    text-align: center;
-    box-shadow: 5px 10px 18px black;
-    background-color: var(--dominant-colour);
-    font-size: 20px;
-}
-
-.project-video{
-    display: grid;
-    z-index: 1;
-    grid-template-columns: 1fr;
-    width: 75%;
-    height: 85%;
-    text-align: center;
-    box-shadow: 5px 10px 18px black;
-    background-color: var(--dominant-colour);
-    font-size: 20px;
-}
-
-.project-video video{
-    width: 100%;
-    height:15em;
-}
-
-.label{
-    display: inline;
-    color:black;
-    font-size:20px;
-}
-
-.value{
-    display: inline;
-    font-size: 20px;
-    color:var(--dominant-colour);
-}
-
-.source-code{
-    display: block;
-    position: relative;
-    padding: 0.5em;
-    color:var(--dominant-colour);
-    font-size: 20px;
-    transition:color 0.3s ease-in;
-}
-
-.source-code:hover{
-    color:black;
-}
-
-.gh-icon{
-    text-decoration: underline;
-}
-
-
-
-.project-buttons{
-    display: flex;
-    align-items: center;
-    width: 75%;
-}
-
-
-.project-buttons button{
-    color:var(--dominant-colour);
-    background-color: var(--complementary-colour-blue);
-    height: 2em;
-    font-size: 1.25em;
-    border: none;
-    cursor: pointer;
-    font-family:var(--main-font);
-}
-
-.description-button{
-    margin:2px;
-    border-radius: 20px 0 0 0;
-    color:var(--dominant-colour);
-    background-color: var(--complementary-colour-blue);
-    transition: background-color 0.3s ease in-out;
-}
-
-.video-button{
-    border-left: 100px solid black;
-    color:var(--dominant-colour);
-    background-color: var(--complementary-colour-blue);
-    transition: background-color 0.3s linear;
-}
-
-.description-button:hover{
-    background-color:#B1BBF3 ;
-}
-
-.video-button:hover{
-    background-color:#B1BBF3 ;
-}
-    
-@media screen  and (min-width:768px){
-    .project-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height:25em;
-        width: 100%;
-        
-    }
-    
-    .project-info-container{
-        height: 100%;
-        width: 25em;
-        border-radius: 20px;
-        box-shadow: 5px 10px 18px black;
-    }
-    
-    .project-info-image{
-        height:75%;
-        width:100%;
-        border-radius: 20px 20px 0 0;
-        background-size:cover;
-        background-repeat: no-repeat;
-    }
-    
-    .project-info-image img{
-        height:100%;
-        width:100%;
-        border-radius: 20px 20px 0 0;
-    }
-    
-    
-    .project-info-text{
-        height:25%;
-        border-radius: 0 0 20px 20px;
-        background-color: var(--complementary-colour-blue);
-        text-align: center;
-    }
-    
-    .project-details-container{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        /* align-items: flex-start;
-        width:75%;
-        padding: 0;
-        height: 100%;
-    }
-    
-    .project-description{
-        display: grid;
-        z-index: 1;
-        grid-template-columns: 1fr;
-        width: 75%;
-        height: 85%;
-        text-align: center;
-        box-shadow: 5px 10px 18px black;
-        background-color: var(--dominant-colour);
-        font-size: 20px;
-    }
-    
-    .project-video{
-        display: grid;
-        z-index: 1;
-        grid-template-columns: 1fr;
-        width: 75%;
-        height: 85%;
-        text-align: center;
-        box-shadow: 5px 10px 18px black;
-        background-color: var(--dominant-colour);
-        font-size: 20px;
-    }
-    
-    .project-video video{
-        width: 100%;
-        height:15.5em;
-    }
-    
-    .label{
-        display: inline;
-        color:black;
-        font-size:20px;
-    }
-    
-    .value{
-        display: inline;
-        font-size: 20px;
-        color:var(--dominant-colour);
-    }
-    
-    .source-code{
-        display: block;
-        padding: 0.5em;
-        color:var(--dominant-colour);
-        font-size: 20px;
-        transition:color 0.3s ease-in;
-    }
-    
-    .source-code:hover{
-        color:black;
-    }
-    
-    .project-buttons{
-        display: flex;
-        align-items: center;
-    }
-    
-    
-    .project-buttons button{
-        color:var(--dominant-colour);
-        background-color: var(--complementary-colour-blue);
-        height: 2em;
-        font-size: 1.25em;
-        font-family:var(--main-font);
-        border: none;
-        cursor: pointer;
-    }
-    
-    .description-button{
-        margin:2px;
-        border-radius: 20px 0 0 0;
-        color:var(--dominant-colour);
-        background-color: var(--complementary-colour-blue);
-        transition: background-color 0.3s ease in-out;
-    }
-    
-    .video-button{
-        border-left: 100px solid black;
-        color:var(--dominant-colour);
-        background-color: var(--complementary-colour-blue);
-        transition: background-color 0.3s linear;
-    }
-    
-    .description-button:hover{
-        background-color:#B1BBF3 ;
-    }
-    
-    .video-button:hover{
-        background-color:#B1BBF3 ;
-    }
-    
-} */
