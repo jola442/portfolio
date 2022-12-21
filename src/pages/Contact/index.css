@@ -63,6 +63,18 @@
   height: 10%;
 }
 
+.form-input input[type="email"]{
+  background-color: lightgrey;
+  border-radius: 5px;
+  color: var(--complementary-colour-grey);
+  font-size: 1em;
+  font-family: var(--main-font);
+  margin: 1.25% 0 1.25%;
+  border: none;
+  width: 100%;
+  height: 10%;
+}
+
 .form-input ::placeholder{
   color: var(--complementary-colour-grey);
   font-family: var(--main-font);
@@ -159,6 +171,18 @@
   }
 
   .form-input input[type="text"]{
+    background-color: lightgrey;
+    border-radius: 5px;
+    color: var(--complementary-colour-grey);
+    font-size: 1.5em;
+    font-family: var(--main-font);
+    margin: 1.25% 0 1.25%;
+    border: none;
+    width: 100%;
+    height: 10%;
+  }
+
+  .form-input input[type="email"]{
     background-color: lightgrey;
     border-radius: 5px;
     color: var(--complementary-colour-grey);

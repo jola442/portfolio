@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { memo } from 'react'
 import ReactDom  from 'react-dom';
 import "./index.css"
 import {v4 as uuidv4} from "uuid";
@@ -21,7 +21,7 @@ const Modal = ( {title, description, imgLink, isOpen, closeModal, tools}) => {
             </div>
 
             <div className='project-img-container'>
-                <img className='project-img' src={imgLink}/>
+                <img className='project-img' src={imgLink} alt={title}/>
             </div>
 
             <div className='tools'>
@@ -52,4 +52,4 @@ const Modal = ( {title, description, imgLink, isOpen, closeModal, tools}) => {
     document.getElementById("modal"))
 }
 
-export default Modal
+export default memo(Modal)

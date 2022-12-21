@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaInfoCircle, FaGithub, FaVideo } from "react-icons/fa"
 import {v4 as uuidv4} from "uuid";
-import { useState } from 'react'
+import { memo, useState, useMemo } from 'react'
 import DOMPurify from 'dompurify'
 import "./index.css"
 import Modal from "../Modal"
+import { useCallback } from 'react';
 
 function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) {
 
@@ -14,16 +15,17 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
     setModalIsOpen(true);
   }
 
-  function closeModal(){
+  const closeModal = useCallback( () => {
     setModalIsOpen(false);
-  }
+    }, [])  
+  
 
   function parseTitle(title){
     let newTitle = "";
     newTitle += title[0].toLowerCase();
 
     for(let i = 1; i < title.length; i++){
-      if(title[i-1]==" "){
+      if(title[i-1]===" "){
         newTitle += title[i].toLowerCase();
       }
 
@@ -38,12 +40,14 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
     return newTitle;
   }
 
+  const projectClassName = useMemo( () => (parseTitle(title)), [title]);
+
 
   return (
     <>
         <div className='project-container' onClick={openModal}>
           <div className='project-image' /*style={{backgroundImage: "url(" + imgLink + ")"}}*/>
-            <img className = {parseTitle(title)} src={imgLink}></img>
+            <img className = {projectClassName} src={imgLink} alt={title}></img>
           </div>
 
           <div className="project-text">
@@ -71,9 +75,9 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
             </a> }
 
             
-            <a>
-              <FaInfoCircle onClick={openModal} className="info icon"/>
-            </a>
+           
+            <FaInfoCircle onClick={openModal} className="info icon"/>
+          
        
        
 
@@ -93,4 +97,4 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
   )
 }
 
-export default Project
+export default memo(Project)
