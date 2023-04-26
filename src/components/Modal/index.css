@@ -44,13 +44,18 @@
 
 
 .close-button{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     position: relative;
     top:0;
     color:var(--dominant-colour);
     padding-right: 0.5em;
     font-size: 1em;
     margin: 0;
+}
+
+.description{
+    font-size: 1.25em;
 }
 
 .header{
@@ -103,7 +108,7 @@
 
 @media screen and (min-width: 768px){
     .modal-container{
-        width: 80%;
+        width: 50%;
     }
 
     
@@ -123,7 +128,8 @@
     
     
     .close-button{
-        display: inline-block;
+        display: flex;
+        align-items: center;
         position: relative;
         top:0;
         color:var(--dominant-colour);
@@ -154,7 +160,7 @@
         position: absolute;
         top:20%;
         animation:fadeInDown 0.5s;
-        width: 80%;
+        width: 50%;
         background-color:var(--dominant-colour);
         box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
         z-index: 6;

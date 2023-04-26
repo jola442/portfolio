@@ -3,12 +3,10 @@ import DesktopNavbar from './components/DesktopNavbar';
 import Home from "./pages/Home";
 import Contact from './pages/Contact';
 import Projects from './pages/Projects'; 
-import MobileNavbar from './components/MobileNavbar';
 
 function App() {
   return (
     <>
-    {/* CSS toggles what navbar shows (mobile or desktop) */}
       <DesktopNavbar />
       <Routes>
         <Route path="/" element={<Home/>}/>

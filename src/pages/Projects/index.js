@@ -17,9 +17,11 @@ export default function Projects(){
                     key = {project.id}
                     title = {project.title}
                     imgLink = {project.imglink}
-                    description = {project.description}
+                    desc = {project.description}
+                    summary = {project.summary}
                     gitHubLink = {project.gitHubLink}
                     videoLink = {project.videoLink}
+                    date = {project.date}
                     tools = {project.tools}
                     >   
                 </Project>

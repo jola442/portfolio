@@ -7,7 +7,7 @@ import "./index.css"
 import Modal from "../Modal"
 import { useCallback } from 'react';
 
-function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) {
+function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, tools} ) {
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -21,22 +21,10 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
   
 
   function parseTitle(title){
-    let newTitle = "";
-    newTitle += title[0].toLowerCase();
-
-    for(let i = 1; i < title.length; i++){
-      if(title[i-1]===" "){
-        newTitle += title[i].toLowerCase();
-      }
-
-      else{
-        newTitle += title[i];
-      }
-    }
+    let newTitle = title.toLowerCase();
 
     newTitle = newTitle.replace(/\s/g, "-");
 
-    
     return newTitle;
   }
 
@@ -53,15 +41,15 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
           <div className="project-text">
               <div className='title-and-date'>
                 <h3 className="title">{title}</h3>
-                <p className="date">Sept 2020 - Dec 2021</p>
+                <p className="date" >{date}</p>
                 <div className='tools'>
                   {tools.map( (tool) =>{return (
                   <div key={uuidv4()} className='tool' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tool.name)}}>  
                   </div>)})}
                 </div>
               </div>
-              <div className='summary'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque accusamus magnam nesciunt similique quae repellat voluptates in modi quasi repellendus.
+              <div className='summary' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(summary)}}>
+
               </div>
           </div>
 
@@ -84,12 +72,12 @@ function Project( {title, imgLink, description, gitHubLink, videoLink, tools} ) 
           </div>
 
     </div>
-      {modalIsOpen && <Modal title={title} imgLink={imgLink} description={description} tools={tools} isOpen = {modalIsOpen} closeModal={closeModal}/>}
+      {modalIsOpen && <Modal title={title} imgLink={imgLink} summary={summary} desc = {desc} tools={tools} isOpen = {modalIsOpen} closeModal={closeModal}/>}
     </>                   
     //  key = {project.id}
     // title = {project.title}
     // imgLink = {project.imglink}
-    // description = {project.description}
+    // summary = {project.summary}
     // gitHubLink = {project.gitHubLink}
     // videoLink = {project.videoLink}
     // tools = {project.tools}

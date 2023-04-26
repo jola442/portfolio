@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-img.cranial-electrical-stimulation-device-simulation{
+img.ces-device-simulation{
     object-fit: contain;
 }
 
@@ -143,7 +143,7 @@ img.cranial-electrical-stimulation-device-simulation{
             width: 100%;
         }
         
-        img.cranial-electrical-stimulation-device-simulation{
+        img.ces-device-simulation{
             object-fit: contain;
         }
         

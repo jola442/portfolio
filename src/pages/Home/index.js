@@ -18,7 +18,11 @@ export default function Home(){
             <div className="intro">
                 <h2>Hey there,</h2>
                 <h1>I'm Jola Ajayi</h1>
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus unde recusandae accusantium obcaecati quam vitae cupiditate vero facilis quod animi veritatis eligendi neque suscipit numquam iste atque architecto, enim tenetur minus consectetur aspernatur officia ex. Aperiam, aspernatur! Architecto, id doloribus?</h3>
+                <h3>
+                    A fourth year undergraduate, currently studying Computer Science at Carleton University. 
+                    I am passionate about web development and looking for gainful employment as a Software Engineer. 
+                    I enjoy skateboarding, playing chess and video games in my spare time.
+                </h3>
                 <Link to="/Projects">
                     <button className = "view-work button">View my work</button>
                 </Link>
