@@ -6,7 +6,7 @@ import MobileNavbar from "../../components/MobileNavbar"
 export default function Projects(){
     return(
         <>
-        {/* <MobileNavbar/> */}
+        <MobileNavbar/>
         <div className="page-title">
             <h1>Projects</h1>
 

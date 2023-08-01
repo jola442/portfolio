@@ -32,8 +32,7 @@ const Modal = ( {title, desc, imgLink, isOpen, closeModal, tools}) => {
                     </div>)})
                 }
             </div>
-
-            <div className=''></div>          
+                   
             <p className='description'>{desc}</p>
 
 

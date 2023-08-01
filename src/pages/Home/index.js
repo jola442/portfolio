@@ -10,7 +10,7 @@ export default function Home(){
     const resume = "./Jola Ajayi's Resume.pdf"
     return (
         <>
-            {/* <MobileNavbar/> */}
+            <MobileNavbar/>
             <div className='home container animate__animated'>
             <div className="intro-image">
                 <img src = "../intro-image.jpg" alt="programming"></img>

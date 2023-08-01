@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <DesktopNavbar />
-      <MobileNavbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Contact" element={<Contact/>}/>

@@ -3,9 +3,10 @@ import { useState, useEffect, useRef} from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import NavLinks from "../NavLinks"
 
+
 export default function MobileNavbar() {
     const [navLinksVisible, setNavLinksVisible] = useState(false);
-
+   
     function showNavLinks(){
         setNavLinksVisible(!navLinksVisible)
     }
