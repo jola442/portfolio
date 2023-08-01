@@ -10,19 +10,19 @@ export default function Home(){
     const resume = "./Jola Ajayi's Resume.pdf"
     return (
         <>
-            <MobileNavbar/>
+            {/* <MobileNavbar/> */}
             <div className='home container animate__animated'>
             <div className="intro-image">
                 <img src = "../intro-image.jpg" alt="programming"></img>
             </div>
             <div className="intro">
-                <h2>Hey there,</h2>
+                <p>Hey there,</p>
                 <h1>I'm Jola Ajayi</h1>
-                <h3>
+                <p>
                     A fourth year undergraduate, currently studying Computer Science at Carleton University. 
                     I am passionate about web development and looking for gainful employment as a Software Engineer. 
                     I enjoy skateboarding, playing chess and video games in my spare time.
-                </h3>
+                </p>
                 <Link to="/Projects">
                     <button className = "view-work button">View my work</button>
                 </Link>

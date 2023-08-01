@@ -33,7 +33,42 @@ h1{
 }
 
 .mobile-nav{
+  background-color: var(--complementary-colour-blue);
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width:100%;
+  z-index: 4;
+}
+
+.mobile-nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin:0;
+  width:100%;
+  padding-left:0;
+  position:absolute;
+  top:100%;
+  background-color: var(--complementary-colour-blue);
+}
+
+.mobile-nav li{
+  height:100%;
+  border-radius: 5px;
+  font-size: 1.5em;
   width: 100%;
+  text-align: center;
+}
+
+.mobile-nav li a{
+  height: 100%;
+  color:var(--dominant-colour);
+  transition:color 0.3s ease-in;
+  border-radius: 5px;
 }
 
 .mobile-navList{
@@ -68,47 +103,6 @@ h1{
 }
 
 
-nav{
-  background-color: var(--complementary-colour-blue);
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: fixed;
-  width:100%;
-  /* padding-bottom: 10px; */
-  z-index: 4;
-}
-
-nav ul{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin:0;
-  width:100%;
-  padding-left:0;
-  position:absolute;
-  top:100%;
-  background-color: var(--complementary-colour-blue);
-}
-
-nav li{
-  height:100%;
-  border-radius: 5px;
-  font-size: 1.5em;
-  width: 100%;
-  text-align: center;
-
-}
-
-nav li a{
-  height: 100%;
-  color:var(--dominant-colour);
-  transition:color 0.3s ease-in;
-  border-radius: 5px;
-}
-
 .logo{
   display: flex;
   justify-content: flex-start;
@@ -141,7 +135,7 @@ nav li a{
   font-size: 2em;
 }
 
-.active{
+.mobile-navList .active{
   text-decoration: underline;
 }
 
@@ -163,41 +157,47 @@ nav li a{
     display: none;
   }
 
-  .desktop-nav{
-    display: flex;
-  }
-
   h1{
     font-size: 53px;
     color:var(--complementary-colour-blue);
   }
-
   
-  nav{
-    flex-direction: row;
+  .desktop-nav{
+    display: flex;
+    background-color: var(--complementary-colour-blue);
+    position: fixed;
+    width:100%;
     justify-content: space-between;
     align-items: center;
     padding:0 1em;
+    z-index: 4;
   }
   
-  nav ul{
+  .desktop-nav ul{
     display: flex;
-    flex-direction: row;
     gap:5em;
-    width: auto;
     padding: 0;
-    position:relative;
   }
 
-  nav li{
-    width: auto;
+  .desktop-nav li{
+    height:100%;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .desktop-nav li a{
+    height: 100%;
+    color:var(--dominant-colour);
+    transition:color 0.3s ease-in;
+    border-radius: 5px;
   }
 
-  nav li a:hover{
+  .desktop-nav li a:hover{
     color:#A8AABC;
   }
 
-  .active{
+  .desktop-navList .active{
     text-decoration: none;
   }
 }

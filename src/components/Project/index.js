@@ -44,12 +44,13 @@ function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, t
                 <p className="date" >{date}</p>
                 <div className='tools'>
                   {tools.map( (tool) =>{return (
-                  <div key={uuidv4()} className='tool' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tool.name)}}>  
-                  </div>)})}
+                    <div key={uuidv4()} className='tool'> 
+                      {tool.name} 
+                    </div>)})}
                 </div>
               </div>
-              <div className='summary' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(summary)}}>
-
+              <div className='summary'>
+                  {summary}
               </div>
           </div>
 

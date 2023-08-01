@@ -27,7 +27,7 @@ export default function Contact(){
 
     return (
     <>
-        <MobileNavbar/>
+        {/* <MobileNavbar/> */}
         <div className="page-title">
             <h1>Contact Me</h1>
         </div>

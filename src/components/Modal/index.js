@@ -27,13 +27,14 @@ const Modal = ( {title, desc, imgLink, isOpen, closeModal, tools}) => {
 
             <div className='tools'>
                 {tools.map( (tool) =>{return (
-                        <div key={uuidv4()} className='tool' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tool.name)}}>  
+                    <div key={uuidv4()} className='tool'>
+                        {tool.name}
                     </div>)})
                 }
             </div>
 
             <div className=''></div>          
-            <p className='description' dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(desc)}}/>
+            <p className='description'>{desc}</p>
 
 
             
