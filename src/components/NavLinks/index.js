@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
 
-export default function NavLinks( {isMobile, isVisible}) {
+export default function NavLinks( {isMobile, isVisible, toggleNavLinkVisibility}) {
 
   const visibleNavLinkStyle = {
     transform:"translateY(0)",
@@ -26,19 +26,23 @@ export default function NavLinks( {isMobile, isVisible}) {
     }
   }
 
+  function toggleVisibility(){
+    toggleNavLinkVisibility(false);
+  }
+
 
   return (
     <ul className={isMobile?"mobile-navList":"desktop-navList"} style={computeStyle()}>
         <li>
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to = "/">Home</NavLink>
+            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to = "/" onClick={toggleVisibility}>Home</NavLink>
         </li>
 
         <li >
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/Projects">Projects</NavLink>
+            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/Projects" onClick={toggleVisibility}>Projects</NavLink>
         </li>
 
         <li>
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/Contact">Contact</NavLink>
+            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/Contact" onClick={toggleVisibility}>Contact</NavLink>
         </li>
 
     </ul>

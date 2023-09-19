@@ -11,11 +11,15 @@ export default function MobileNavbar() {
         setNavLinksVisible(!navLinksVisible)
     }
 
+    function toggleNavLinkVisibility(isNavLinkVisible){
+        setNavLinksVisible(isNavLinkVisible);
+    }
+
   return (
     <>
     <nav className="mobile-nav">
         <div className="logo">
-            <NavLink to = "/">
+            <NavLink to = "/" onClick={() => {setNavLinksVisible(false)}}>
                 <img src="../../logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
             </NavLink>
         </div>
@@ -28,7 +32,7 @@ export default function MobileNavbar() {
         </div>}
         {/* {navLinksVisible && <NavLinks/>} */}
     </nav>
-    <NavLinks isMobile={true} isVisible={navLinksVisible}></NavLinks>
+    <NavLinks isMobile={true} isVisible={navLinksVisible} toggleNavLinkVisibility={toggleNavLinkVisibility}></NavLinks>
     </>
 
     
