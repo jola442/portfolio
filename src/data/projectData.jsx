@@ -17,7 +17,7 @@ export const projects =
     {
         id: uuidv4(),
         title:"Movie Database Platform",
-        imglink:"https://user-images.githubusercontent.com/51683551/200951609-039049b7-1d93-4802-aee4-7e900a7a2212.png",
+        imglink:"https://user-images.githubusercontent.com/51683551/270122767-b4575ba5-f3da-4ae8-ac50-b2a07a0f82ea.png",
         summary: "A website that allows users to view movie descriptions, similar movies, reviews and movie stars. Users are also given recommendations based on movies they reviewed and are able to follow their favourite celebrities and users.",
         description:"This is a web application designed to maintain a database of movie information, including movie title, release year, writers, actors, etc. This site provides registration and login functionality for users. Users can be regular or contributing users. Regular users can browse all information on the site, add movie reviews, and receive movie recommendations based on their past reviews. They are also able to follow other users and movie personnel. They then get notified when the user they follow edits the database or a movie personality they follow is added to the cast of a movie. In addition to this, contributing users are able to add new movies, movie personnel and edit existing records. The application also provides a way for users to view and manage information about their account, search for movies by title, name, and/or genre keyword, and view movie information and reviews. The main server code uses Node.js. The project's data is stored using MongoDB and Mongoose. The frontend is currently being reworked to use React.",
         gitHubLink: "https://github.com/jola442/movie-database",

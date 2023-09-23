@@ -23,6 +23,7 @@ export default function MobileNavbar() {
                 <img src="../../logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
             </NavLink>
         </div>
+        
         {!navLinksVisible && <div className="bars nav-icon" onClick={showNavLinks}>
             <FaBars/>
         </div>}
