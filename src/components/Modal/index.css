@@ -17,7 +17,7 @@
 
 .modal-container{
     position: absolute;
-    top: 20%;
+    top:5%;
     animation:fadeInDown 0.5s;
     width: 75%;
     background-color:var(--dominant-colour);
@@ -238,7 +238,7 @@
     
     .modal-container{
         position: absolute;
-        top:20%;
+        top:5%;
         animation:fadeInDown 0.5s;
         width: 40%;
         background-color:var(--dominant-colour);
