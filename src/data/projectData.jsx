@@ -25,7 +25,7 @@ export const projects =
         // videoLink: "N/A",
         date: "December 2020",
         type:"website",
-        tools: [{id:uuidv4(), name:"Github"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"Pug"}, {id:uuidv4(), name:"Express"},]
+        tools: [{id:uuidv4(), name:"Github"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"},]
     },
 
     {
