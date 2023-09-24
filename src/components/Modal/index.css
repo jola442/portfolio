@@ -115,7 +115,7 @@
     top:50%;
     left:-2%;
     z-index: 7;
-    color:black;
+    color:var(--dominant-colour);
     font-size:5em;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
@@ -126,7 +126,7 @@
     top:50%;
     right:-2%;
     z-index: 7;
-    color:black;
+    color:var(--dominant-colour);
     font-size: 5em;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
