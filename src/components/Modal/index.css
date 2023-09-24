@@ -19,7 +19,7 @@
     position: absolute;
     top: 20%;
     animation:fadeInDown 0.5s;
-    width: 90%;
+    width: 60%;
     background-color:var(--dominant-colour);
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
     z-index: 6;
@@ -110,10 +110,63 @@
     background-color: var(--complementary-colour-blue);
 }
 
+.left-arrow{
+    position: absolute;
+    top:50%;
+    left:5%;
+    z-index: 6;
+    color:var(--dominant-colour);
+    font-size:5em;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.right-arrow{
+    position: absolute;
+    top:50%;
+    right:5%;
+    z-index: 6;
+    color:var(--dominant-colour);
+    font-size: 5em;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+
 
 @media screen and (min-width: 768px){
     .modal-container{
         width: 50%;
+    }
+
+    .left-arrow{
+        position: absolute;
+        top:50%;
+        left:15%;
+        z-index: 6;
+        color:var(--dominant-colour);
+        font-size: 5em;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .left-arrow:hover{
+        color:var(--complementary-colour-grey);
+    }
+
+    .right-arrow:hover{
+        color:var(--complementary-colour-grey);
+    }
+
+    .right-arrow{
+        position: absolute;
+        top:50%;
+        right:15%;
+        z-index: 6;
+        color:var(--dominant-colour);
+        font-size: 5em;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
     }
 
     
@@ -121,6 +174,36 @@
 
 
 @media screen and (min-width: 1280px){
+    .left-arrow{
+        position: absolute;
+        top:50%;
+        left:22%;
+        z-index: 6;
+        color:var(--dominant-colour);
+        font-size: 5em;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .left-arrow:hover{
+        color:var(--complementary-colour-grey);
+    }
+
+    .right-arrow:hover{
+        color:var(--complementary-colour-grey);
+    }
+
+    .right-arrow{
+        position: absolute;
+        top:50%;
+        right:22%;
+        z-index: 6;
+        color:var(--dominant-colour);
+        font-size: 5em;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+    
     .close-button:hover{
         cursor: pointer;
     }

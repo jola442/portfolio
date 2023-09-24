@@ -7,18 +7,11 @@ import "./index.css"
 import Modal from "../Modal"
 import { useCallback } from 'react';
 
-function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, tools} ) {
-
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, tools, index, toggleVisibility} ) {
 
   function openModal(){
-    setModalIsOpen(true);
+    toggleVisibility(index);
   }
-
-  const closeModal = useCallback( () => {
-    setModalIsOpen(false);
-    }, [])  
-  
 
   function parseTitle(title){
     let newTitle = title.toLowerCase();
@@ -73,7 +66,7 @@ function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, t
           </div>
 
     </div>
-      {modalIsOpen && <Modal title={title} imgLink={imgLink} summary={summary} desc = {desc} tools={tools} isOpen = {modalIsOpen} closeModal={closeModal}/>}
+      {/* {modalIsOpen && <Modal title={title} imgLink={imgLink} summary={summary} desc = {desc} tools={tools} isOpen = {modalIsOpen} closeModal={closeModal}/>} */}
     </>                   
     //  key = {project.id}
     // title = {project.title}
