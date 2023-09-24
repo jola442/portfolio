@@ -55,15 +55,18 @@
 }
 
 .description{
-    font-size: 1.25em;
+    position: relative;
+    bottom: 5px;
+    padding:0 10px 0 10px;
+    font-size: 1em;
 }
 
 .header{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid lightgray;
     background-color: var(--complementary-colour-blue);
+    padding:0 0 0 10px;
 }
 
 
@@ -88,21 +91,23 @@
     display: block;
     aspect-ratio: 16 / 9;
     object-position: center;
-    object-fit: contain;
+    object-fit: fill;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     height:100%;
 }
 
+
 .modal-container .tool{
-    background-color: var(--complementary-colour-blue);
-    color: var(--dominant-colour);
+    background-color: var(--dominant-colour);
     font-size: 0.75em;
 }
 
 .modal-container .tools{
-    border-bottom: 2px solid lightgray;
+    position: relative;
+    bottom: 5px;
+    background-color: var(--complementary-colour-blue);
 }
 
 
@@ -160,7 +165,7 @@
         position: absolute;
         top:20%;
         animation:fadeInDown 0.5s;
-        width: 50%;
+        width: 40%;
         background-color:var(--dominant-colour);
         box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
         z-index: 6;
@@ -179,8 +184,8 @@
         text-align: center;
         display: flex;
         justify-content: space-between;
-        border-bottom: 2px solid lightgray;
         background-color: var(--complementary-colour-blue);
+        padding:0 0 0 10px;
     }
     
     
@@ -201,25 +206,44 @@
         height:20em;
     }
     
-    .project-img{
+    .project-img.website{
         display: block;
         aspect-ratio: 16 / 9;
         object-position: center;
-        object-fit: contain;
-        width: 80%;
+        object-fit: fill;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         height:100%;
     }
+
+    /* .project-img.desktop-app{
+        object-fit:fill;
+    } */
+
+    img.ces-device-simulation{
+        object-fit: contain;
+    }
+
+ 
     
     .modal-container .tool{
-        background-color: var(--complementary-colour-blue);
-        color: var(--dominant-colour);
+        background-color: var(--dominant-colour);
         font-size: 1em;
+
     }
     
     .modal-container .tools{
-        border-bottom: 2px solid lightgray;
+        /* border-bottom: 2px solid lightgray; */
+        background-color: var(--complementary-colour-blue);
+        position: relative;
+        bottom:5px;
+    }
+
+    .description{
+        position: relative;
+        bottom: 5px;
+        padding:0 10px 0 10px;
     }
 }
 

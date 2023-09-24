@@ -11,6 +11,7 @@ export const projects =
         gitHubLink: "https://github.com/jola442/Crazy8",
         videoLink: "https://youtu.be/toV59FuZVkk",
         date: "January 2023",
+        type: "wesbite",
         tools: [{id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Selenium"}, {id:uuidv4(), name:"JUnit5"}, {id:uuidv4(), name:"Cucumber"}, {id:uuidv4(), name:"Spring"}, {id:uuidv4(), name:"Spring Boot"}, {id:uuidv4(), name:"Github"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}]
     },
 
@@ -23,6 +24,7 @@ export const projects =
         gitHubLink: "https://github.com/jola442/movie-database",
         // videoLink: "N/A",
         date: "December 2020",
+        type:"website",
         tools: [{id:uuidv4(), name:"Github"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"Pug"}, {id:uuidv4(), name:"Express"},]
     },
 
@@ -35,6 +37,7 @@ export const projects =
         gitHubLink: "https://github.com/jola442/cranial-electrical-stimulation-device-simulation",
         videoLink: "https://user-images.githubusercontent.com/51683551/208214202-be5ba9e8-78d2-4aaa-81ae-288e74bfd72f.mp4",
         date: "April 2022",
+        type:"desktop-app",
         tools: [{id:uuidv4(), name:"Qt C++"}, {id:uuidv4(), name:"Github"}]
     },
 
@@ -46,6 +49,7 @@ export const projects =
         description:"This is a desktop application that simulates simple robots. The simulator uses threads and allows multiple robots to connect to it, with each robot running as its own process. The robots move forward or turn in fixed increments each time, and there is an environment containing up to a maximum number of robots. The line drawn through the center of each robot indicates what direction it is facing. On collision with the walls or other robots, the robots seek an alternative path that avoids subsequent collisions.",
         gitHubLink: "https://github.com/jola442/robot-collision-simulator",
         date: "December 2020",
+        type:"desktop-app",
         // videoLink: "https://user-images.githubusercontent.com/51683551/200935670-e896deb0-3d45-461b-b5be-67952d9fd1c7.gif",
         tools: [{id:uuidv4(), name:"C"}, {id:uuidv4(), name:"Github"}]
     },
@@ -59,6 +63,7 @@ export const projects =
         gitHubLink: "https://github.com/jola442/electronic-store-app",
         videoLink: "https://user-images.githubusercontent.com/51683551/208212163-90bf984d-f966-43dc-92e8-d11d8f1deca6.mp4",
         date: "April 2020",
+        type:"desktop-app",
         tools: [{id:uuidv4(), name:"JavaFX"}, {id:uuidv4(), name:"Github"}]
     },
 
@@ -70,6 +75,7 @@ export const projects =
         description:"This is a text interface desktop application that allows clients to browse and purchase books. The system is implemented using Python and PostgreSQL. It provides different functionalities depending on whether the user is an owner or a customer. Owners can choose to exit the store, search books by various criteria, add new books, remove books, generate reports on sales and expenditure, and more. They can also manually input information about a new book or retrieve information from the Google Books API. Customers can also exit the store, search for books by various criteria, add books to their cart, and checkout. They can also track their orders after they have been placed. The entity-relationship diagram and normalized relation schemas can be found on the github page of this project.",
         gitHubLink: "https://github.com/jola442/bookstore",
         date: "December 2021",
+        type: "desktop-app",
         tools: [{id:uuidv4(), name:"Python"}, {id:uuidv4(), name:"PostgreSQL"}, {id:uuidv4(), name:"Github"}, ]
     },
 ]

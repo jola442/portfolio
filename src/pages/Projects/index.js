@@ -23,6 +23,7 @@ export default function Projects(){
                     videoLink = {project.videoLink}
                     date = {project.date}
                     tools = {project.tools}
+                    // type = {project.type}
                     >   
                 </Project>
             })}

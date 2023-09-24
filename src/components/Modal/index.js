@@ -4,12 +4,26 @@ import "./index.css"
 import {v4 as uuidv4} from "uuid";
 import { FaTimes } from "react-icons/fa"
 import DOMPurify from 'dompurify';
+import { useMemo } from 'react';
+
 
 const Modal = ( {title, desc, imgLink, isOpen, closeModal, tools}) => {
-
+   
     function onCloseClicked(event){
         closeModal();
     }
+
+    function parseTitle(title){
+        let newTitle = title.toLowerCase();
+    
+        newTitle = newTitle.replace(/\s/g, "-");
+    
+        return newTitle;
+      }
+    
+      const projectClassName = useMemo( () => (parseTitle(title)), [title]);
+
+
   return ReactDom.createPortal(
     <>
         {isOpen &&
@@ -22,7 +36,7 @@ const Modal = ( {title, desc, imgLink, isOpen, closeModal, tools}) => {
             </div>
 
             <div className='project-img-container'>
-                <img className='project-img' src={imgLink} alt={title}/>
+                <img className={"project-img " + projectClassName} src={imgLink} alt={title}/>
             </div>
 
             <div className='tools'>

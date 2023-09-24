@@ -38,6 +38,10 @@ img.ces-device-simulation{
     object-fit: contain;
 }
 
+img.desktop-app{
+    object-fit: contain;
+}
+
 
 
 .project-text{
@@ -142,13 +146,11 @@ img.ces-device-simulation{
             height:100%;
             width: 100%;
         }
-        
+
         img.ces-device-simulation{
             object-fit: contain;
         }
-        
-        
-        
+                 
         .project-text{
             width: 100%;
             background-color:var(--complementary-colour-blue);
