@@ -11,7 +11,6 @@ export default function Projects(){
     // const [curProject, setCurProject] = useState(null);
 
     function toggleProjectVisibility(index){
-        console.log("i got called")
         if(projectIndex > 0){
             // setCurProject(null);
             setProjectIndex(-1);
@@ -25,7 +24,6 @@ export default function Projects(){
     }
 
     function getNextIndex(index){
-        console.log("I GOT CALLED");
         console.log(index);
         setProjectIndex(index);
         // setCurProject(projects[index]);

@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo, useEffect } from 'react'
 import ReactDom  from 'react-dom';
 import "./index.css"
 import {v4 as uuidv4} from "uuid";
@@ -8,6 +8,13 @@ import { useMemo } from 'react';
 
 
 const Modal = ( {project, title, desc, imgLink, closeModal, tools, numProjects, index, getNextIndex}) => {
+    // const [className, setClassName] = useState("");
+
+    useEffect(() => {
+        // setClassName()
+        console.log("I ran");
+    }, [])
+    
    
     function onCloseClicked(){
         closeModal();
@@ -37,7 +44,7 @@ const Modal = ( {project, title, desc, imgLink, closeModal, tools, numProjects, 
         return newTitle;
       }
     
-      const projectClassName = useMemo( () => (parseTitle(project.title)), [title]);
+      let projectClassName = useMemo( () => (parseTitle(project.title)), [project.title]);
 
 
   return ReactDom.createPortal(
