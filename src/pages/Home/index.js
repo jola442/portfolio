@@ -6,7 +6,7 @@ import MobileNavbar from "../../components/MobileNavbar";
 export default function Home(){
     const githubUrl = "https://github.com/jola442";
     const linkedInUrl = "https://www.linkedin.com/in/jola-ajayi/"
-    const email = "mailto:benjamen.ajayi@gmail.com"
+    const email = "mailto:jolaajayi@cmail.carleton.ca"
     const resume = "./Jola Ajayi's Resume.pdf"
     return (
         <>
