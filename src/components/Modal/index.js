@@ -9,12 +9,6 @@ import { useMemo } from 'react';
 
 const Modal = ( {project, title, desc, imgLink, closeModal, tools, numProjects, index, getNextIndex}) => {
     // const [className, setClassName] = useState("");
-
-    useEffect(() => {
-        // setClassName()
-        console.log("I ran");
-    }, [])
-    
    
     function onCloseClicked(){
         closeModal();

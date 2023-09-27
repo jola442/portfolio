@@ -24,15 +24,9 @@ export default function Projects(){
     }
 
     function getNextIndex(index){
-        console.log(index);
         setProjectIndex(index);
         // setCurProject(projects[index]);
     }
-
-
-    useEffect( () => {
-        console.log(projectIndex)
-    }, [projectIndex])
 
     return(
         <>
