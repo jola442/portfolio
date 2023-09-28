@@ -38,11 +38,11 @@ export default function NavLinks( {isMobile, isVisible, toggleNavLinkVisibility}
         </li>
 
         <li >
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/Projects" onClick={toggleVisibility}>Projects</NavLink>
+            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/projects" onClick={toggleVisibility}>Projects</NavLink>
         </li>
 
         <li>
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/Contact" onClick={toggleVisibility}>Contact</NavLink>
+            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/contact" onClick={toggleVisibility}>Contact</NavLink>
         </li>
 
     </ul>

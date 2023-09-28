@@ -11,8 +11,8 @@ function App() {
       <DesktopNavbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/Projects" element={<Projects/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/projects" element={<Projects/>}/>
       </Routes>
     </>
 

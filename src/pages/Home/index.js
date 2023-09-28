@@ -23,7 +23,7 @@ export default function Home(){
                     I am passionate about web development and looking for gainful employment as a Software Engineer. 
                     I enjoy skateboarding, playing chess and video games in my spare time.
                 </p>
-                <Link to="/Projects">
+                <Link to="/projects">
                     <button className = "view-work button">View my work</button>
                 </Link>
                 {/* <button>Download my resume</button> */}
