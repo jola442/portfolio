@@ -24,7 +24,7 @@ export const projects =
         gitHubLink: "https://github.com/jola442/movie-database",
         // videoLink: "N/A",
         date: "December 2020",
-        type:"website",
+        demoLink:"https://jaymovies.up.railway.app/",
         tools: [{id:uuidv4(), name:"Github"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"},]
     },
 

@@ -49,6 +49,7 @@ export default function Projects(){
                     tools = {project.tools}
                     index={index}
                     toggleVisibility={toggleProjectVisibility}
+                    demoLink = {project.demoLink}
                     // type = {project.type}
                     >   
                 </Project>

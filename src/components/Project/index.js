@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInfoCircle, FaGithub, FaVideo } from "react-icons/fa"
+import { FaInfoCircle, FaGithub, FaVideo, FaGlobe, FaExternalLinkAlt } from "react-icons/fa"
 import {v4 as uuidv4} from "uuid";
 import { memo, useState, useMemo } from 'react'
 import DOMPurify from 'dompurify'
@@ -7,7 +7,7 @@ import "./index.css"
 import Modal from "../Modal"
 import { useCallback } from 'react';
 
-function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, tools, index, toggleVisibility} ) {
+function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, tools, index, demoLink, toggleVisibility} ) {
 
   function openModal(){
     toggleVisibility(index);
@@ -32,9 +32,14 @@ function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, t
           </div>
 
           <div className="project-text">
-              <div className='title-and-date'>
+              <div className='project-middle'>
                 <h3 className="title">{title}</h3>
                 <p className="date" >{date}</p>
+                {demoLink && 
+                <a href={demoLink} className="demo-link" target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
+                  Live Demo
+                  <FaExternalLinkAlt className='external-link icon'></FaExternalLinkAlt>
+                </a>}
                 <div className='tools'>
                   {tools.map( (tool) =>{return (
                     <div key={uuidv4()} className='tool'> 
@@ -48,9 +53,13 @@ function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, t
           </div>
 
           <div className='project-links'>
-            <a href={gitHubLink} className='source-code' target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
+            <a href={gitHubLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
                 <FaGithub className="gh icon"/>
             </a>
+
+            {demoLink && <a href={demoLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
+                <FaGlobe className='desktop icon'></FaGlobe>
+            </a>}
 
             {videoLink && <a href={videoLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
               <FaVideo className="video icon"/>
