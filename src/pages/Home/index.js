@@ -19,7 +19,7 @@ export default function Home(){
                 <p>Hey there,</p>
                 <h1>I'm Jola Ajayi</h1>
                 <p>
-                    A fourth year undergraduate, currently studying Computer Science at Carleton University. 
+                    A recent Computer Science graduate from Carleton University. 
                     I am passionate about web development and looking for gainful employment as a Software Engineer. 
                     I enjoy skateboarding, playing chess and video games in my spare time.
                 </p>
