@@ -42,7 +42,7 @@
   height:2.5em;
   border-radius: 20px;
   background-color: var(--complementary-colour-blue);
-  font-size: 1.75em;
+  font-size: 1em;
   color: white;
   font-family: 'EB Garamond', serif;
   cursor: pointer;
@@ -69,7 +69,7 @@
   justify-content: flex-start;
   align-items: center;
   padding:0.1em;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .icon-container{
@@ -87,10 +87,6 @@
   display: none;
   color:var(--complementary-colour-blue);
   font-size: 1.5em;
-}
-
-.icon{
-  scale:1.25
 }
 
 .logo{
@@ -196,6 +192,10 @@
 
   .intro-container{
     animation: slideInUp 2s;
+  }
+
+  .icon{
+    scale:1.5;
   }
 
   .icon-text{

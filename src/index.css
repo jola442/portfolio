@@ -59,7 +59,7 @@ h1{
 .mobile-nav li{
   height:100%;
   border-radius: 5px;
-  font-size: 2em;
+  font-size: 1.5em;
   width: 100%;
   text-align: center;
 }
@@ -89,7 +89,7 @@ h1{
 }
 
 .mobile-navList li{
-  font-size: 2em;
+  font-size: 1.5em;
   color:var(--dominant-colour);
 }
 
@@ -99,7 +99,7 @@ h1{
 
 .mobile-navList a{
   color:var(--dominant-colour);
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 
@@ -132,7 +132,7 @@ h1{
   justify-content: flex-end;
   align-items: center;
   width: 50%;
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 .mobile-navList .active{

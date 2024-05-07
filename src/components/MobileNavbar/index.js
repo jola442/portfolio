@@ -19,8 +19,8 @@ export default function MobileNavbar() {
     <>
     <nav className="mobile-nav">
         <div className="logo">
-            <NavLink to = "/">
-                <img src="../../logo.png" alt="logo" style={{width: "90px", height:"74px"}}></img>
+            <NavLink to = "/" onClick={() => {setNavLinksVisible(false)}}>
+                <img src="../../logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
             </NavLink>
         </div>
         
