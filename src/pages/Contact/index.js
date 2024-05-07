@@ -28,9 +28,9 @@ export default function Contact(){
     return (
     <>
         <MobileNavbar/>
-        <div className="page-title">
+        {/* <div className="page-title">
             <h1>Contact Me</h1>
-        </div>
+        </div> */}
 
         <div className="contact-me container animate__animated">
 

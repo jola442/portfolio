@@ -132,7 +132,7 @@ h1{
   justify-content: flex-end;
   align-items: center;
   width: 50%;
-  /* font-size: 2em; */
+  font-size: 2em;
 }
 
 .mobile-navList .active{
