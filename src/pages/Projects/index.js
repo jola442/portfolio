@@ -31,10 +31,10 @@ export default function Projects(){
     return(
         <>
         <MobileNavbar/>
-        <div className="page-title">
+        {/* <div className="page-title">
             <h1>Projects</h1>
 
-        </div>
+        </div> */}
         <div className='projects container animate__animated'>
             {projects.map( (project, index) =>{
                 return <Project

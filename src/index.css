@@ -59,7 +59,7 @@ h1{
 .mobile-nav li{
   height:100%;
   border-radius: 5px;
-  font-size: 1.5em;
+  font-size: 2em;
   width: 100%;
   text-align: center;
 }
@@ -89,7 +89,7 @@ h1{
 }
 
 .mobile-navList li{
-  font-size: 1.5em;
+  font-size: 2em;
   color:var(--dominant-colour);
 }
 
@@ -99,7 +99,7 @@ h1{
 
 .mobile-navList a{
   color:var(--dominant-colour);
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 
@@ -181,7 +181,7 @@ h1{
 
   .desktop-nav li{
     height:100%;
-    font-size: 1.5em;
+    font-size: 2em;
     width: 100%;
     text-align: center;
   }
@@ -194,7 +194,7 @@ h1{
   }
 
   .desktop-nav li a:hover{
-    color:#A8AABC;
+    color:var(--complementary-colour-grey);
   }
 
   .desktop-navList .active{
