@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
 @import "animate.css";
 
-.container{
-  overflow: hidden;
-}
-
 .intro-image{
   flex:1;
   width: 100%;
@@ -53,6 +49,7 @@
 
 .home{
   padding-bottom: 2.5em;
+  overflow: hidden;
 }
 
 .contact-menu{
@@ -112,9 +109,9 @@
 } */
 
 @media screen and (min-width: 768px){
-  .intro p{
+  /* .intro p{
     font-size: 1.5em;
-  }
+  } */
 
 }
 
@@ -157,6 +154,7 @@
   
   .container{
     flex-direction: row;
+    height: 100vh;
   }
 
   .intro-container{
