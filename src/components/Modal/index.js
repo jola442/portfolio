@@ -65,7 +65,8 @@ const Modal = ( {project, title, desc, imgLink, closeModal, tools, numProjects, 
                 }
             </div>
                    
-            <p className='description'>{project.description}</p>
+            <p className="description" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(project.description) }} />
+
 
 
             

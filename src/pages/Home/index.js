@@ -13,7 +13,7 @@ export default function Home(){
             <MobileNavbar/>
             <div className='home container animate__animated'>
                 <div className="intro-image">
-                    <img src = "../intro-image.jpg" alt="programming"></img>
+                    <img src = "../intro-image2.jpg" alt="programming"></img>
                 </div>
 
                 <div className="intro-container">

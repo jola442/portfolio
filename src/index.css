@@ -133,6 +133,7 @@ h1{
   align-items: center;
   width: 50%;
   font-size: 2em;
+  padding: 10px;
 }
 
 .mobile-navList .active{
