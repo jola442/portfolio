@@ -9,10 +9,11 @@
 
 :root{
   --dominant-colour:white;
-  --complementary-colour-blue:#5084f4;
+  --complementary-colour-blue:#0a5a93;
   --complementary-colour-torquoise:#3189A0;
   --complementary-colour-grey:#444655;
   --complementary-colour:#B1BBF3;
+  --complementary-colour-black: black;
   --main-font:'EB Garamond', serif;
 }
 
@@ -195,7 +196,7 @@ h1{
   }
 
   .desktop-nav li a:hover{
-    color:var(--complementary-colour-grey);
+    color:var(--complementary-colour-black);
   }
 
   .desktop-navList .active{

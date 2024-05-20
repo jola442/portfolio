@@ -11,18 +11,18 @@
     /* overflow-y: hidden; */
 }
 
-/* .page-title{
+.page-title{
     display: inline-block;
     width: 100%;
     text-align: center;
     background-color: black;
     color:var(--dominant-colour);
-    padding: 0;
-    margin-bottom:2em;
-    margin-top: 3.5em;
+    padding: 10px;
+    margin-bottom:80px;
+    margin-top: 64px;
     position: fixed;
     z-index: 2;
-} */
+}
 
 .page-title h1{
     display: inline;
