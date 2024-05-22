@@ -7,7 +7,8 @@ import MobileNavbar from "../../components/MobileNavbar";
 
 export default function Contact(){
     const form = useRef();
-  
+    const linkedInUrl = "https://www.linkedin.com/in/jola-ajayi/"
+    const email = "mailto:jolaajayi@cmail.carleton.ca"
 
     function sendEmail(e){
         e.preventDefault();
@@ -50,7 +51,7 @@ export default function Contact(){
                         </div>
 
                         <div className="location contact-text">
-                            Ottawa,ON
+                            Ottawa, ON
                         </div>
                     </div>
 
@@ -64,7 +65,7 @@ export default function Contact(){
                         </div>
                     </div>
 
-                    <div className="mail contact-container">
+                    <a href={email} className="mail contact-container">
                         <div className="mail icon">
                             <FaEnvelope/>
                         </div>
@@ -72,9 +73,9 @@ export default function Contact(){
                         <div className="mail contact-text">
                             jolaajayi@cmail.carleton.ca
                         </div>
-                    </div>
+                    </a>
 
-                    <div className="lk-in contact-container">
+                    <a href={linkedInUrl} className="lk-in contact-container">
                         <div className="lk-in icon">
                             <FaLinkedin/>
                         </div>
@@ -82,7 +83,7 @@ export default function Contact(){
                         <div className="lk-in contact-text">
                             Jola Ajayi
                         </div>
-                    </div>
+                    </a>
 
                 </div>
     

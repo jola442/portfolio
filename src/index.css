@@ -8,12 +8,13 @@
 }
 
 :root{
-  --dominant-colour:white;
+  --dominant-colour:#F2FAFF;
   --complementary-colour-blue:#0a5a93;
   --complementary-colour-torquoise:#3189A0;
+  --complementary-colour-purple:#7267B0;
   --complementary-colour-grey:#444655;
   --complementary-colour:#B1BBF3;
-  --complementary-colour-black: black;
+  --complementary-colour-black: #001241;
   --main-font:'EB Garamond', serif;
 }
 
@@ -21,12 +22,21 @@ body{
   margin:0;
   background-color: var(--dominant-colour);
   font-family:var(--main-font);
-
+  color:#001241;
 }
 
 h1{
   color:var(--complementary-colour-blue);
 }
+
+/* a{
+  color: #001241;
+}
+
+a:visited{
+  color: #001241;
+} */
+
 
 
 .desktop-nav{

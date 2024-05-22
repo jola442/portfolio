@@ -107,6 +107,20 @@
   /* margin-top: -5em; */
 }
 
+.contact-details a{
+  color:var(--complementary-colour-black);
+  transition:color 0.3s ease-in-out;
+}
+
+.contact-details a:visited{
+  color:var(--complementary-colour-black)
+}
+
+.contact-details a:hover{
+  color:var(--complementary-colour-purple)
+}
+
+
 .contact-container{
   display: flex;
   width: 92.5%;

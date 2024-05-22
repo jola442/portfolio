@@ -15,7 +15,7 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    background-color: black;
+    background-color: var(--complementary-colour-black);
     color:var(--dominant-colour);
     padding: 10px;
     margin-bottom:80px;
