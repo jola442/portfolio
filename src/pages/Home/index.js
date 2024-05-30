@@ -7,7 +7,7 @@ export default function Home(){
     const githubUrl = "https://github.com/jola442";
     const linkedInUrl = "https://www.linkedin.com/in/jola-ajayi/"
     const email = "mailto:jolaajayi@cmail.carleton.ca"
-    const resume = "./Jola Ajayi's Resume.pdf"
+    const resume = "./Jola_Ajayi_Resume.pdf"
     return (
         <>
             <MobileNavbar/>
