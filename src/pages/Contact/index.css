@@ -84,15 +84,17 @@
 }
 
 .form-input input[type="submit"]{
-  border-radius: 5px;
-  background-color: var(--complementary-colour-blue);
-  width: 50%;
-  color:var(--dominant-colour);
-  font-size: 1em;
-  font-family: var(--main-font);
-  height: 15%;
-  border: none;
-  margin:1.25% 0 1.25% 0;
+    width:25vh;
+    height:10vh;
+    border-radius: 20px;
+    background-color: var(--complementary-colour-blue);
+    font-size: 2.5vh;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    cursor: pointer;
+    border: none;
+    margin:2.5% 0 2.5% 0;
+    animation: pulse 2s 4s;
 }
 
 .contact-details{
@@ -220,18 +222,19 @@
   }
 
   .form-input input[type="submit"]{
-    border-radius: 5px;
-    background-color: var(--complementary-colour-blue);
-    width: 50%;
-    color:var(--dominant-colour);
+    height: 4vw;
+    transition: scale 0.3s ease-in-out;
     font-size: 1.5vw;
-    font-family: var(--main-font);
-    height: 10%;
+    animation: pulse 2s 4s;
+    border-radius: 20px;
+    background-color: var(--complementary-colour-blue);
+    font-size: 3vh;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    cursor: pointer;
     border: none;
     margin:2.5% 0 2.5% 0;
-    transition: scale 0.3s ease-in-out;
-    cursor: pointer;
-  }
+}
 
   .form-input input[type="submit"]:hover{
     scale:1.05;
