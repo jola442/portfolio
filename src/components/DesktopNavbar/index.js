@@ -7,7 +7,7 @@ export default function DesktopNavbar() {
     <nav className="desktop-nav">
         <div className="logo">
             <NavLink to = "/">
-                <img src="../../logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
+                <img src="../../logo.png" alt="logo"></img>
             </NavLink>
         </div>
         <NavLinks isMobile={false}/>

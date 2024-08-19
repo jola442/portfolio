@@ -27,41 +27,9 @@
   padding-right:2.5em;
 }
 
-
-.view-work{
-  width:20vw;
-  height:5vw;
-  border-radius: 20px;
-  background-color: var(--complementary-colour-blue);
-  font-size: 1.75vw;
-  color: white;
-  font-family: 'EB Garamond', serif;
-  cursor: pointer;
-  border: none;
-  margin:5vh;
-  animation: pulse 2s 4s;
-}
-
 .home{
   padding-bottom: 2.5em;
   overflow: hidden;
-}
-
-.contact-menu{
-  display: flex;
-  justify-content: center;
-  gap:4em;
-  animation:pulse 2s 2s;
-  width:100%;
-}
-
-.contact-menu .icon{
-  color:var(--complementary-colour-blue);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding:0.1em;
-  font-size: 3.5vw;
 }
 
 .icon-container{
@@ -78,7 +46,7 @@
 .icon-text{
   display: none;
   color:var(--complementary-colour-blue);
-  font-size: 1.5em;
+  font-size: 3vh;
 }
 
 .logo{
@@ -87,11 +55,43 @@
 
 
 .intro p{
-  font-size: 1.5vw;
+  font-size:3vh;
 }
 
 .intro h1{
-  font-size: 3vw;
+  font-size: 5vh;
+}
+
+.view-work{
+  width:35vh;
+  height:10vh;
+  border-radius: 20px;
+  background-color: var(--complementary-colour-blue);
+  font-size: 3vh;
+  color: white;
+  font-family: 'EB Garamond', serif;
+  cursor: pointer;
+  border: none;
+  margin:5vh;
+  animation: pulse 2s 4s;
+}
+
+
+.contact-menu{
+  display: flex;
+  justify-content: center;
+  gap:4vw;
+  animation:pulse 2s 2s;
+  width:100%;
+}
+
+.contact-menu .icon{
+  color:var(--complementary-colour-blue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:0.1em;
+  font-size: 5vh;
 }
 
 .intro-container{
@@ -184,8 +184,13 @@
     min-height:100vh;
   }
 
+
   .intro p{
     font-size: 1.5vw;
+  }
+  
+  .intro h1{
+    font-size: 3vw;
   }
 
   .intro-container{
