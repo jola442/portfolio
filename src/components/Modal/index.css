@@ -19,7 +19,7 @@
     position: absolute;
     top:5%;
     animation:fadeInDown 0.5s;
-    width: 75%;
+    width: 95%;
     background-color:var(--dominant-colour);
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);    
     z-index: 6;
@@ -114,10 +114,10 @@
 .left-arrow{
     position: absolute;
     top:50%;
-    left:-2%;
+    left:-3%;
     z-index: 7;
-    color:var(--dominant-colour);
-    font-size:5em;
+    color:var(--complementary-colour-blue);
+    font-size: 10vw;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
@@ -125,10 +125,10 @@
 .right-arrow{
     position: absolute;
     top:50%;
-    right:-2%;
+    right:-3%;
     z-index: 7;
-    color:var(--dominant-colour);
-    font-size: 5em;
+    color:var(--complementary-colour-blue);
+    font-size: 10vw;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
