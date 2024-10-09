@@ -22,9 +22,35 @@ export const projects =
         description:"This is a web application designed to maintain a database of movie information, including movie title, release year, writers, actors, etc. This site provides registration and login functionality for users. Users can be regular or contributing users. Regular users can browse all information on the site, add movie reviews, and receive movie recommendations based on their past reviews. They are also able to follow other users and movie personnel. They then get notified when the user they follow edits the database or a movie personality they follow is added to the cast of a movie. In addition to this, contributing users are able to add new movies, movie personnel and edit existing records. The application also provides a way for users to view and manage information about their account, search for movies by title, name, and/or genre keyword, and view movie information and reviews. The main server code uses Node.js. The project's data is stored using MongoDB and Mongoose. The frontend is currently being reworked to use React.",
         gitHubLink: "https://github.com/jola442/movie-database",
         // videoLink: "N/A",
-        date: "December 2020",
+        date: "In progress",
         demoLink:"https://jaymovies.up.railway.app/",
         tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"Docker"}]
+    },
+
+    
+    {
+        id: uuidv4(),
+        title:"Distributed Search Engine",
+        imgLink:"../../search_engine.jpg",
+        summary: "Developed a full-stack search engine with a custom web crawler and RESTful API. The project features a React-based frontend for performing searches on crawled datasets, including a fruit dataset and Wikipedia pages, with results ranked using the PageRank algorithm. Deployed on OpenStack with data stored in MongoDB for scalability and persistence.",
+        description:"Developed a full-stack search engine with a custom web crawler and RESTful API. The project features a React-based frontend for performing searches on crawled datasets, including a fruit dataset and Wikipedia pages, with results ranked using the PageRank algorithm. Deployed on OpenStack with data stored in MongoDB for scalability and persistence.",
+        gitHubLink: "https://github.com/jola442/movie-database",
+        // videoLink: "N/A",
+        date: "December 2023",
+        tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"OpenStack"}]
+    },
+
+    {
+        id: uuidv4(),
+        title:"My Father's House Ottawa Website",
+        imgLink:"../../church.avif",
+    summary: "Collaborated with fellow developers and designers to enhance the My Father's House Ottawa website, improving user experience and increasing traffic by 75%. Worked closely with stakeholders to implement SEO strategies and optimize content delivery.",
+    description: "Contributed to the development and maintenance of the My Father's House Ottawa website, using HTML, CSS, JavaScript, and Squarespace. Collaborated with fellow developers and designers to implement SEO best practices, optimize content for a seamless user experience, and align with stakeholder goals. The effort resulted in a 75% increase in website traffic. Utilized Figma for design mockups and content planning.",
+        gitHubLink: "https://github.com/jola442/movie-database",
+        // videoLink: "N/A",
+        demoLink:"https://rccgmfh.org",
+        date: "In progress",
+        tools: [{id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"JavaScript"}, {id:uuidv4(), name:"Squarespace"}, {id:uuidv4(), name:"Figma"}]
     },
 
     {
