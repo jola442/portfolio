@@ -27,6 +27,19 @@ export const projects =
         tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"Docker"}]
     },
 
+    {
+        id: uuidv4(),
+        title:"MFH Events Website",
+        imgLink:"https://private-user-images.githubusercontent.com/51683551/379889200-5d77f26a-b051-4aa6-a642-6845a7c168c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk3OTU4NDIsIm5iZiI6MTcyOTc5NTU0MiwicGF0aCI6Ii81MTY4MzU1MS8zNzk4ODkyMDAtNWQ3N2YyNmEtYjA1MS00YWE2LWE2NDItNjg0NWE3YzE2OGM5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI0VDE4NDU0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYwOTQ2OGNkNDEyYjg3MTBhNGUwOGIyYmNlZmJhMTEyYTA3N2ZiNmE3YjBhZThjNDExNDk0OGQ0NmQzYmYzNjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.wAphlQqGWXGANrfnJvPv3S2CYnc8SiCP4OW2GjrtGmM",
+        summary: "A responsive events management app for myFather’s House, designed to simplify event coordination, streamline registrations, and enhance community engagement.",
+        description: "This web application was developed during the MFH YA Hackathon 2024 to support event management for myFather’s House. It allows administrators to create and manage events with details such as date, time, location, and description, including support for rich text formatting. Members can register for events, view their registrations, and explore upcoming and past events through a user-friendly interface. A calendar view makes it easy to browse events by month. While the prototype will not be incorporated as-is into the church’s website, ongoing development is planned to align the app with the church’s specific needs. The project uses a MERN stack with Tailwind CSS for styling.",
+        gitHubLink: "https://github.com/jola442/mfh-hackathon",
+        videoLink: "https://youtu.be/WFqjMsXB6m8",
+        date: "In progress",
+        tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"TailwindCSS"}]
+    },
+
+
     
     {
         id: uuidv4(),
@@ -34,7 +47,7 @@ export const projects =
         imgLink:"../../search_engine.jpg",
         summary: "Developed a full-stack search engine with a custom web crawler and RESTful API. The project features a React-based frontend for performing searches on crawled datasets, including a fruit dataset and Wikipedia pages, with results ranked using the PageRank algorithm. Deployed on OpenStack with data stored in MongoDB for scalability and persistence.",
         description:"Developed a full-stack search engine with a custom web crawler and RESTful API. The project features a React-based frontend for performing searches on crawled datasets, including a fruit dataset and Wikipedia pages, with results ranked using the PageRank algorithm. Deployed on OpenStack with data stored in MongoDB for scalability and persistence.",
-        gitHubLink: "https://github.com/jola442/movie-database",
+        gitHubLink: "https://github.com/jola442/distributed-search-engine",
         // videoLink: "N/A",
         date: "December 2023",
         tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"OpenStack"}]
@@ -46,7 +59,7 @@ export const projects =
         imgLink:"../../church.avif",
     summary: "Collaborated with fellow developers and designers to enhance the My Father's House Ottawa website, improving user experience and increasing traffic by 75%. Worked closely with stakeholders to implement SEO strategies and optimize content delivery.",
     description: "Contributed to the development and maintenance of the My Father's House Ottawa website, using HTML, CSS, JavaScript, and Squarespace. Collaborated with fellow developers and designers to implement SEO best practices, optimize content for a seamless user experience, and align with stakeholder goals. The effort resulted in a 75% increase in website traffic. Utilized Figma for design mockups and content planning.",
-        gitHubLink: "https://github.com/jola442/movie-database",
+        // gitHubLink: "https://github.com/jola442/movie-database",
         // videoLink: "N/A",
         demoLink:"https://rccgmfh.org",
         date: "In progress",

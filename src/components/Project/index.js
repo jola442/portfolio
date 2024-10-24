@@ -53,9 +53,9 @@ function Project( {title, imgLink, desc, summary, gitHubLink, videoLink, date, t
           </div>
 
           <div className='project-links'>
-            <a href={gitHubLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
+            {gitHubLink && <a href={gitHubLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
                 <FaGithub className="gh icon"/>
-            </a>
+            </a>}
 
             {demoLink && <a href={demoLink} target="_blank" rel="noreferrer noopener" onClick={(e)=>e.stopPropagation()}>
                 <FaGlobe className='desktop icon'></FaGlobe>
