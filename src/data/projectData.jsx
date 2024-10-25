@@ -34,7 +34,7 @@ export const projects =
         summary: "A responsive events management app for myFather’s House, designed to simplify event coordination, streamline registrations, and enhance community engagement.",
         description: "This web application was developed during the MFH YA Hackathon 2024 to support event management for myFather’s House. It allows administrators to create and manage events with details such as date, time, location, and description, including support for rich text formatting. Members can register for events, view their registrations, and explore upcoming and past events through a user-friendly interface. A calendar view makes it easy to browse events by month. While the prototype will not be incorporated as-is into the church’s website, ongoing development is planned to align the app with the church’s specific needs. The project uses a MERN stack with Tailwind CSS for styling.",
         gitHubLink: "https://github.com/jola442/mfh-hackathon",
-        // videoLink: "N/A",
+        videoLink: "https://youtu.be/WFqjMsXB6m8",
         date: "In progress",
         tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"TailwindCSS"}]
     },
