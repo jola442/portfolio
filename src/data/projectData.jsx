@@ -38,8 +38,6 @@ export const projects =
         date: "In progress",
         tools: [{id:uuidv4(), name:"Git"}, {id:uuidv4(), name:"HTML"}, {id:uuidv4(), name:"CSS"}, {id:uuidv4(), name:"Nodejs"}, {id:uuidv4(), name:"MongoDB"}, {id:uuidv4(), name:"Mongoose"}, {id:uuidv4(), name:"React"}, {id:uuidv4(), name:"Express"}, {id: uuidv4(), name:"TailwindCSS"}]
     },
-
-
     
     {
         id: uuidv4(),

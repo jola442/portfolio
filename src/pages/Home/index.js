@@ -20,17 +20,15 @@ export default function Home(){
                     <div className="intro">
                         <p>Hey there,</p>
                         <h1>I'm Jola Ajayi</h1>
-                        <p>
-                            A recent Computer Science graduate from Carleton University with a passion for web development and quality assurance. 
-                            With a strong belief in delivering complete and polished products, I'm eager to bring my skills to a dynamic team as a Software Engineer. 
-                            Beyond coding, you'll find me exploring new skateboarding tricks, strategizing on the chessboard, or diving into the latest video game releases in my spare time. 
+                        <p id="intro-text">
+                        A Computer Science graduate from Carleton University with a passion for technology and delivering impactful solutions. Currently working as a Customer Success Specialist at Visualping, I bring a strong foundation in software engineering, web development, and quality assurance to my work. I’m dedicated to bridging technical expertise with exceptional client support to ensure polished and effective outcomes.
+Beyond technology, you'll find me exploring new skateboarding tricks, strategizing on the chessboard, or diving into the latest video game releases in my spare time.
                         </p>
                         <Link to="/projects">
                             <button className = "view-work button">View my work</button>
                         </Link>
                         {/* <button>Download my resume</button> */}
-                    </div>
-                    <div className= "contact-menu">
+                        <div className= "contact-menu">
                         <a href={githubUrl} target="_blank" rel="noreferrer noopener">
                             <div className = "gh icon-container">
                                 <div className="gh icon-text">
@@ -69,6 +67,8 @@ export default function Home(){
                             </div>
                         </a>
                     </div>
+                    </div>
+               
                     </div>
 
 

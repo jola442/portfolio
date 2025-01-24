@@ -22,9 +22,11 @@
 
 .intro{
   /* flex:0.5; */
-  text-align: center;
   padding-left:2.5em;
   padding-right:2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home{
@@ -142,6 +144,7 @@
 
   .intro h1{
     font-size: 3vw;
+    text-align: center;
     color:var(--complementary-colour-blue);
   }
 
@@ -198,6 +201,11 @@
 
   .intro p{
     font-size: 1.5vw;
+    text-align: center;
+  }
+
+  #intro-text{
+    text-align: left;
   }
   
   .intro h1{
