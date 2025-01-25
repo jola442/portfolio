@@ -71,7 +71,7 @@ export default function Contact(){
                         </div>
 
                         <div className="mail contact-text">
-                            jolaajayi@cmail.carleton.ca
+                            benjamen.ajayi@gmail.com
                         </div>
                     </a>
 
