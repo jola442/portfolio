@@ -8,7 +8,7 @@ import MobileNavbar from "../../components/MobileNavbar";
 export default function Contact(){
     const form = useRef();
     const linkedInUrl = "https://www.linkedin.com/in/jola-ajayi/"
-    const email = "mailto:jolaajayi@cmail.carleton.ca"
+    const email = "mailto:benjamen.ajayi@gmail.com"
 
     function sendEmail(e){
         e.preventDefault();
