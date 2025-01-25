@@ -5,7 +5,9 @@
   flex:1;
   width: 100%;
   animation: slideInLeft 2s;
-  margin-top: 64px;
+  /* position: relative;
+  left:auto; */
+  /* margin-top: 64px; */
 }
 
 
@@ -27,11 +29,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  /* left: 100%; */
 }
 
 .home{
   padding-bottom: 2.5em;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .icon-container{
@@ -102,7 +106,7 @@
   justify-content: center;
   /* max-width: 90%; */
   animation: slideInRight 2s;
-  margin-top:64px
+  /* margin-top:64px */
 }
 
 @media screen and (min-width: 320px){
@@ -173,6 +177,9 @@
 
   .intro-container{
     width: 50%;
+    position: relative;
+    left: 100%;
+    
   }
 
   .bars-icon{
@@ -190,8 +197,11 @@
 
   .intro-image{
     flex:1;
-    height:100vh;
     animation: slideInDown 2s;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
   }
   .intro-image img{
     width: 100%;
@@ -200,7 +210,7 @@
 
 
   .intro p{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     text-align: center;
   }
 
@@ -214,6 +224,8 @@
 
   .intro-container{
     animation: slideInUp 2s;
+    left: 50%;
+    
   }
 
   
