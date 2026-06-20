@@ -1,20 +1,21 @@
 import '../src/index.css'
-import '../src/views/Home/index.css'
-import '../src/views/Projects/index.css'
-import '../src/views/Contact/index.css'
-import '../src/components/Project/index.css'
-import '../src/components/Modal/index.css'
 import DesktopNavbar from '../src/components/DesktopNavbar'
+import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Jola Ajayi's Portfolio",
   description: 'Portfolio Website',
 }
 
-export default function RootLayout({ children }) {
+type RootLayoutProps = {
+  children: ReactNode
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen bg-page text-ink">
         <DesktopNavbar />
         {children}
         <div id="modal" />

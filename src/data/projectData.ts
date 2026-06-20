@@ -1,6 +1,24 @@
 import {v4 as uuidv4} from "uuid";
-export const projects = 
-[
+
+export type ProjectTool = {
+    id: string
+    name: string
+}
+
+export type ProjectItem = {
+    id: string
+    title: string
+    imgLink: string
+    description: string
+    summary: string
+    date: string
+    tools: ProjectTool[]
+    gitHubLink?: string
+    videoLink?: string
+    demoLink?: string
+}
+
+export const projects: ProjectItem[] = [
 
     {
         id: uuidv4(),

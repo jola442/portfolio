@@ -4,14 +4,14 @@ import { projects} from "../../data/projectData"
 import Project from "../../components/Project"
 import MobileNavbar from "../../components/MobileNavbar"
 import Modal from "../../components/Modal"
-import { useEffect, useState } from "react"
+import { useState, type JSX } from "react"
 
 
-export default function Projects(){
+export default function Projects(): JSX.Element {
     const [projectIndex, setProjectIndex] = useState(-1);
     // const [curProject, setCurProject] = useState(null);
 
-    function toggleProjectVisibility(index){
+    function toggleProjectVisibility(index: number): void {
         if(projectIndex > 0){
             // setCurProject(null);
             setProjectIndex(-1);
@@ -24,15 +24,19 @@ export default function Projects(){
 
     }
 
-    function getNextIndex(index){
+    function getNextIndex(index: number): void {
         setProjectIndex(index);
         // setCurProject(projects[index]);
+    }
+
+    function closeModal(): void {
+        setProjectIndex(-1);
     }
 
     return(
         <>
         <MobileNavbar/>
-        <div className='projects container animate__animated'>
+        <section className='mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 pb-10 pt-24 sm:px-6 xl:px-10 xl:pt-32'>
             {/* <div className="page-title">
                 <h1>Projects</h1>
 
@@ -42,7 +46,6 @@ export default function Projects(){
                     key = {project.id}
                     title = {project.title}
                     imgLink = {project.imgLink}
-                    desc = {project.description}
                     summary = {project.summary}
                     gitHubLink = {project.gitHubLink}
                     videoLink = {project.videoLink}
@@ -55,9 +58,9 @@ export default function Projects(){
                     >   
                 </Project>
             })}
-        </div>
+        </section>
 
-        {projectIndex >= 0 && <Modal project={projects[projectIndex]} index={projectIndex} numProjects={projects.length} getNextIndex={getNextIndex} closeModal={toggleProjectVisibility}/>}
+        {projectIndex >= 0 && <Modal project={projects[projectIndex]} index={projectIndex} numProjects={projects.length} getNextIndex={getNextIndex} closeModal={closeModal}/>}
         </>
     )
 }
