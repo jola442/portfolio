@@ -42,7 +42,7 @@ export const projects =
     {
         id: uuidv4(),
         title:"Distributed Search Engine",
-        imgLink:"../../search_engine.jpg",
+        imgLink:"/search_engine.jpg",
         summary: "Developed a full-stack search engine with a custom web crawler and RESTful API. The project features a React-based frontend for performing searches on crawled datasets, including a fruit dataset and Wikipedia pages, with results ranked using the PageRank algorithm. Deployed on OpenStack with data stored in MongoDB for scalability and persistence.",
         description:"Developed a full-stack search engine with a custom web crawler and RESTful API. The project features a React-based frontend for performing searches on crawled datasets, including a fruit dataset and Wikipedia pages, with results ranked using the PageRank algorithm. Deployed on OpenStack with data stored in MongoDB for scalability and persistence.",
         gitHubLink: "https://github.com/jola442/distributed-search-engine",
@@ -54,7 +54,7 @@ export const projects =
     {
         id: uuidv4(),
         title:"My Father's House Ottawa Website",
-        imgLink:"../../church.avif",
+        imgLink:"/church.avif",
     summary: "Collaborated with fellow developers and designers to enhance the My Father's House Ottawa website, improving user experience and increasing traffic by 75%. Worked closely with stakeholders to implement SEO strategies and optimize content delivery.",
     description: "Contributed to the development and maintenance of the My Father's House Ottawa website, using HTML, CSS, JavaScript, and Squarespace. Collaborated with fellow developers and designers to implement SEO best practices, optimize content for a seamless user experience, and align with stakeholder goals. The effort resulted in a 75% increase in website traffic. Utilized Figma for design mockups and content planning.",
         // gitHubLink: "https://github.com/jola442/movie-database",

@@ -7,13 +7,13 @@ export default function Home(){
     const githubUrl = "https://github.com/jola442";
     const linkedInUrl = "https://www.linkedin.com/in/jola-ajayi/"
     const email = "mailto:benjamen.ajayi@gmail.com"
-    const resume = "./Jola_Ajayi_Resume.pdf"
+    const resume = "/Jola_Ajayi_Resume.pdf"
     return (
         <>
             <MobileNavbar/>
             <div className='home container animate__animated'>
                 <div className="intro-image">
-                    <img src = "../intro-image2.jpg" alt="programming"></img>
+                    <img src = "/intro-image2.jpg" alt="programming"></img>
                 </div>
 
                 <div className="intro-container">
