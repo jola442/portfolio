@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from "react-icons/fa"
-import { Link } from "react-router-dom"
-import "./index.css"
+import Link from 'next/link'
 import MobileNavbar from "../../components/MobileNavbar";
 
 export default function Home(){
@@ -24,7 +23,7 @@ export default function Home(){
                         A Computer Science graduate from Carleton University with a passion for technology and delivering impactful solutions. Currently working as a Customer Success Specialist at Visualping, I bring a strong foundation in software engineering, web development, and quality assurance to my work. I’m dedicated to bridging technical expertise with exceptional client support to ensure polished and effective outcomes.
 Beyond technology, you'll find me exploring new skateboarding tricks, strategizing on the chessboard, or diving into the latest video game releases in my spare time.
                         </p>
-                        <Link to="/projects">
+                        <Link href="/projects">
                             <button className = "view-work button">View my work</button>
                         </Link>
                         {/* <button>Download my resume</button> */}

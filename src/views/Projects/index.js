@@ -1,4 +1,5 @@
-import "./index.css"
+"use client"
+
 import { projects} from "../../data/projectData"
 import Project from "../../components/Project"
 import MobileNavbar from "../../components/MobileNavbar"

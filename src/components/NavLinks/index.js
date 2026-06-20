@@ -1,7 +1,11 @@
+"use client"
+
 import React from 'react'
-import { NavLink } from "react-router-dom"
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function NavLinks( {isMobile, isVisible, toggleNavLinkVisibility}) {
+  const pathname = usePathname();
 
   const visibleNavLinkStyle = {
     transform:"translateY(0)",
@@ -27,22 +31,28 @@ export default function NavLinks( {isMobile, isVisible, toggleNavLinkVisibility}
   }
 
   function toggleVisibility(){
-    toggleNavLinkVisibility(false);
+    if (toggleNavLinkVisibility) {
+      toggleNavLinkVisibility(false);
+    }
+  }
+
+  function getClassName(path){
+    return pathname === path ? "active" : "";
   }
 
 
   return (
     <ul className={isMobile?"mobile-navList":"desktop-navList"} style={computeStyle()}>
         <li>
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to = "/" onClick={toggleVisibility}>Home</NavLink>
+        <Link className={getClassName("/")} href="/" onClick={toggleVisibility}>Home</Link>
         </li>
 
         <li >
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/projects" onClick={toggleVisibility}>Projects</NavLink>
+        <Link className={getClassName("/projects")} href="/projects" onClick={toggleVisibility}>Projects</Link>
         </li>
 
         <li>
-            <NavLink className={ ({isActive})=>{return isActive?"active":""} } to= "/contact" onClick={toggleVisibility}>Contact</NavLink>
+        <Link className={getClassName("/contact")} href="/contact" onClick={toggleVisibility}>Contact</Link>
         </li>
 
     </ul>

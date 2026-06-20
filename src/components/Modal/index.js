@@ -1,6 +1,7 @@
+"use client"
+
 import { memo, useEffect } from 'react'
 import ReactDom  from 'react-dom';
-import "./index.css"
 import {v4 as uuidv4} from "uuid";
 import { FaAngleRight, FaAngleLeft, FaTimes } from "react-icons/fa"
 import DOMPurify from 'dompurify';

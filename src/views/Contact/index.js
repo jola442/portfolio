@@ -1,4 +1,5 @@
-import "./index.css"
+"use client"
+
 import { FaEnvelope, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import { useRef } from "react";
 import emailjs from '@emailjs/browser'

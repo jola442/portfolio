@@ -1,14 +1,15 @@
-import { useState, useEffect, useRef} from "react"
-import { NavLink } from "react-router-dom"
+"use client"
+
+import Link from 'next/link'
 import NavLinks from "../NavLinks"
 
 export default function DesktopNavbar() {
   return (
     <nav className="desktop-nav">
         <div className="logo">
-            <NavLink to = "/">
-                <img src="../../logo.png" alt="logo"></img>
-            </NavLink>
+            <Link href="/">
+                <img src="/logo.png" alt="logo"></img>
+            </Link>
         </div>
         <NavLinks isMobile={false}/>
     </nav>

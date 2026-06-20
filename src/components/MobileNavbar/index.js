@@ -1,5 +1,7 @@
-import { NavLink } from "react-router-dom"
-import { useState, useEffect, useRef} from "react"
+"use client"
+
+import Link from 'next/link'
+import { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import NavLinks from "../NavLinks"
 
@@ -19,9 +21,9 @@ export default function MobileNavbar() {
     <>
     <nav className="mobile-nav">
         <div className="logo">
-            <NavLink to = "/" onClick={() => {setNavLinksVisible(false)}}>
-                <img src="../../logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
-            </NavLink>
+            <Link href="/" onClick={() => {setNavLinksVisible(false)}}>
+                <img src="/logo.png" alt="logo" style={{width: "80px", height:"64px"}}></img>
+            </Link>
         </div>
         
         {!navLinksVisible && <div className="bars nav-icon" onClick={showNavLinks}>

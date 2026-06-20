@@ -1,9 +1,10 @@
+"use client"
+
 import React from 'react'
 import { FaInfoCircle, FaGithub, FaVideo, FaGlobe, FaExternalLinkAlt } from "react-icons/fa"
 import {v4 as uuidv4} from "uuid";
 import { memo, useState, useMemo } from 'react'
 import DOMPurify from 'dompurify'
-import "./index.css"
 import Modal from "../Modal"
 import { useCallback } from 'react';
 
