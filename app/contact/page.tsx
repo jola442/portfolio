@@ -1,5 +1,8 @@
-import Contact from '../../src/views/Contact'
-
-export default function Page(): JSX.Element {
-  return <Contact />
+﻿"use client"
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
+export default function Page() {
+  const router = useRouter()
+  useEffect(() => { router.replace("/#contact") }, [router])
+  return null
 }
