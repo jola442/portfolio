@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Jola Ajayi — Product Manager',
+  title: 'Jola Ajayi | Software Developer & Product Builder',
   description: 'Portfolio of Jola Ajayi, CS graduate and Product Manager at Visualping.',
 }
 

@@ -15,13 +15,13 @@ const emailAddress = 'benjamen.ajayi@gmail.com'
 const resume = '/Jola_Ajayi_Resume.pdf'
 
 // Theme-sensitive class fragments — full strings so Tailwind tree-shakes them correctly
-const D   = 'border-ink/15 dark:border-white/20'
-const P   = 'text-ink dark:text-white'
-const M   = 'text-ink/50 dark:text-white/50'
-const S   = 'text-ink/70 dark:text-white/70'
+const D = 'border-ink/15 dark:border-white/20'
+const P = 'text-ink dark:text-white'
+const M = 'text-ink/50 dark:text-white/50'
+const S = 'text-ink/70 dark:text-white/70'
 const Bdr = 'border-ink/20 dark:border-white/25'
 const Srf = 'bg-ink/5 dark:bg-white/5'
-const Dv  = 'divide-ink/15 dark:divide-white/20'
+const Dv = 'divide-ink/15 dark:divide-white/20'
 
 function getCategory(tools: ProjectTool[]): string {
   const n = tools.map(t => t.name.toLowerCase())
@@ -90,10 +90,10 @@ export default function Home(): JSX.Element {
               </h1>
 
               <div className="mt-6 flex flex-wrap items-center gap-3 animate-fade-up" style={{ animationDelay: '320ms' }}>
-                <span className="border-2 border-brand bg-brand px-3 py-1.5 text-sm font-black uppercase tracking-widest text-white shadow-[3px_3px_0px_rgba(0,0,0,0.2)] dark:shadow-[3px_3px_0px_rgba(0,0,0,0.4)] transition-all duration-200 hover:skew-y-1 hover:shadow-[5px_5px_0px_rgba(0,0,0,0.25)] dark:hover:shadow-[5px_5px_0px_rgba(0,0,0,0.5)]">
+                {/* <span className="border-2 border-brand bg-brand px-3 py-1.5 text-sm font-black uppercase tracking-widest text-white shadow-[3px_3px_0px_rgba(0,0,0,0.2)] dark:shadow-[3px_3px_0px_rgba(0,0,0,0.4)] transition-all duration-200 hover:skew-y-1 hover:shadow-[5px_5px_0px_rgba(0,0,0,0.25)] dark:hover:shadow-[5px_5px_0px_rgba(0,0,0,0.5)]">
                   Computer Science
                 </span>
-                <span className={`font-semibold ${M}`}>Graduate &amp;</span>
+                <span className={`font-semibold ${M}`}>Graduate &amp;</span> */}
                 <span className="border-2 border-brand bg-brand px-3 py-1.5 text-sm font-black uppercase tracking-widest text-white shadow-[3px_3px_0px_rgba(0,0,0,0.2)] dark:shadow-[3px_3px_0px_rgba(0,0,0,0.4)] transition-all duration-200 hover:skew-y-1 hover:shadow-[5px_5px_0px_rgba(0,0,0,0.25)] dark:hover:shadow-[5px_5px_0px_rgba(0,0,0,0.5)]">
                   Product Manager
                 </span>
@@ -106,9 +106,9 @@ export default function Home(): JSX.Element {
         <Reveal className={`mt-10 border-y-4 ${D}`}>
           <div className="flex overflow-x-auto">
             {[
-              { value: '9+', label: 'Projects' },
-              { value: '3+', label: 'Years Exp.' },
-              { value: 'B.Sc.', label: 'CS Degree' },
+              { value: '10', label: 'Projects' },
+              { value: '2', label: 'Years Exp' },
+              { value: 'B.C.S.', label: 'CS Degree' },
               { value: 'Ottawa', label: 'Based In' },
             ].map(({ value, label }) => (
               <div key={label} className={`shrink-0 border-r px-6 py-5 last:border-r-0 ${D}`}>
@@ -122,9 +122,9 @@ export default function Home(): JSX.Element {
         {/* Quick-nav tiles */}
         <div className="grid grid-cols-1 sm:grid-cols-3">
           {([
-            { href: '#projects', label: 'Projects',   sublabel: '9+ engineering projects',    tag: 'Explore',   bg: 'bg-emerald-400', tp: 'text-black', ts: 'text-black/60', external: false },
-            { href: '#contact',  label: 'Contact Me', sublabel: "Let's build something",      tag: 'Reach Out', bg: 'bg-pink-500',    tp: 'text-white', ts: 'text-white/70', external: false },
-            { href: githubUrl,   label: 'GitHub',     sublabel: 'Open source repositories',   tag: 'View Code', bg: 'bg-ink',         tp: 'text-white', ts: 'text-white/50', external: true },
+            { href: '#projects', label: 'Projects', sublabel: '9+ engineering projects', tag: 'Explore', bg: 'bg-emerald-400', tp: 'text-black', ts: 'text-black/60', external: false },
+            { href: '#contact', label: 'Contact Me', sublabel: "Let's build something", tag: 'Reach Out', bg: 'bg-pink-500', tp: 'text-white', ts: 'text-white/70', external: false },
+            { href: githubUrl, label: 'GitHub', sublabel: 'Open source repositories', tag: 'View Code', bg: 'bg-ink', tp: 'text-white', ts: 'text-white/50', external: true },
           ] as { href: string; label: string; sublabel: string; tag: string; bg: string; tp: string; ts: string; external: boolean }[]).map(({ href, label, sublabel, tag, bg, tp, ts, external }, i) => (
             <Reveal key={label} delay={i * 80}>
               <a
@@ -152,20 +152,26 @@ export default function Home(): JSX.Element {
           <Reveal className={`border-b-4 p-6 xl:border-b-0 xl:border-r-4 xl:p-12 ${D}`}>
             <div className={`mb-3 text-xs font-black uppercase tracking-widest ${M}`}>About</div>
             <p className={`text-base leading-7 xl:text-lg ${S}`}>
-              Carleton University Computer Science graduate (Honours, Minor in Psychology) building user-centered
-              products by pairing strong engineering fundamentals with product strategy and customer insight.
+Software developer with experience in product management and customer-facing roles. I specialize in bridging technical execution with user needs, using customer insights to build practical solutions that deliver measurable impact.
             </p>
             <p className={`mt-4 text-base leading-7 xl:text-lg ${S}`}>
-              At Visualping, I support customers while contributing directly to software work: building internal tools,
-              improving workflows, and completing engineering tickets that improve quality and delivery speed.
+At Visualping, I contribute to product strategy while building internal tools, improving workflows, and delivering technical solutions that help teams operate more efficiently and customers achieve better outcomes.
+
+            </p>
+
+            <p className={`mt-4 text-base leading-7 xl:text-lg ${S}`}>
+Beyond technology, I'm passionate about competition, strategy, and continuous learning.
+ Chess is a major interest of mine, which led me to create <a href="https://chessmask.com" target="_blank" rel="noreferrer noopener" className="text-blue-500 underline">Chessmask</a>,
+  a platform for blindfold chess training. Outside of work, you'll usually find me playing video games with friends, skateboarding, or watching football.
+   I'm a longtime Chelsea F.C. supporter and I like to stay active by playing football (soccer), among other sports.
             </p>
           </Reveal>
 
           <div className={`grid grid-cols-1 divide-y-4 ${Dv}`}>
             {[
-              { label: 'Education', title: 'Carleton University', sub: 'B.C.S. Honours, Minor in Psychology' },
+              { label: 'Education', title: 'Carleton University', sub: 'Bachelor of Computer Science Honours with High Distinction, Minor in Psychology' },
               { label: 'Current Role', title: 'Visualping', sub: 'Product Manager (May 2026 - Present)' },
-              { label: 'Engineering Scope', title: 'Visualping', sub: 'Technical PM focused on internal tooling and CS team efficiency' },
+              { label: 'Engineering Scope', title: 'Visualping', sub: 'Technical PM focused on developing features for internal tools and boosting Customer Success team efficiency' },
             ].map(({ label, title, sub }, i) => (
               <Reveal key={label} delay={i * 100} className="p-6">
                 <div className={`mb-1 text-xs font-black uppercase tracking-widest ${M}`}>{label}</div>
@@ -177,10 +183,10 @@ export default function Home(): JSX.Element {
               <div className={`mb-2 text-xs font-black uppercase tracking-widest ${M}`}>Links</div>
               <div className="flex flex-wrap gap-2">
                 {[
-                  { href: githubUrl,              label: 'GitHub',   icon: FaGithub,   external: true },
-                  { href: linkedInUrl,            label: 'LinkedIn', icon: FaLinkedin, external: true },
-                  { href: `mailto:${emailAddress}`, label: 'Email',  icon: FaEnvelope },
-                  { href: resume,                 label: 'Resume',   icon: FaFilePdf,  external: true },
+                  { href: githubUrl, label: 'GitHub', icon: FaGithub, external: true },
+                  { href: linkedInUrl, label: 'LinkedIn', icon: FaLinkedin, external: true },
+                  { href: `mailto:${emailAddress}`, label: 'Email', icon: FaEnvelope },
+                  { href: resume, label: 'Resume', icon: FaFilePdf, external: true },
                 ].map(({ href, label, icon: Icon, external }) => (
                   <a
                     key={href}
@@ -219,7 +225,7 @@ export default function Home(): JSX.Element {
                   title: 'Product Manager',
                   company: 'Visualping',
                   summary:
-                    'Drive execution for customer and internal workflow improvements with a technical PM approach. Oversee implementation quality, support internal tool development, and improve CS team efficiency through process and tooling.',
+                    'Drive execution for customer and internal workflow improvements with a technical PM approach. Oversee implementation quality, support internal tool development, and improve Customer Success team efficiency through process and tooling.',
                   tone: 'bg-emerald-400',
                 },
                 {
@@ -314,8 +320,8 @@ export default function Home(): JSX.Element {
           <Reveal className={`border-b-4 p-6 xl:border-b-0 xl:border-r-4 xl:p-12 ${D}`}>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
               <div className="grid gap-4 sm:grid-cols-2">
-                <input type="text"  name="name"    placeholder="Name"    required className={inputClass} />
-                <input type="email" name="email"   placeholder="Email"   required className={inputClass} />
+                <input type="text" name="name" placeholder="Name" required className={inputClass} />
+                <input type="email" name="email" placeholder="Email" required className={inputClass} />
               </div>
               <input type="text" name="subject" placeholder="Subject" required className={inputClass} />
               <textarea name="message" placeholder="Your message..." required rows={6} className={`${inputClass} resize-none`} />
@@ -331,10 +337,10 @@ export default function Home(): JSX.Element {
 
           <Reveal delay={100} className={`flex flex-col divide-y p-6 xl:p-12 ${Dv}`}>
             {[
-              { icon: FaMapMarkerAlt, label: 'Location', value: 'Ottawa, ON',       href: undefined },
-              { icon: FaPhoneAlt,     label: 'Phone',    value: '778-883-3106',      href: undefined },
-              { icon: FaEnvelope,     label: 'Email',    value: emailAddress,        href: `mailto:${emailAddress}` },
-              { icon: FaLinkedin,     label: 'LinkedIn', value: 'Jola Ajayi',        href: linkedInUrl },
+              { icon: FaMapMarkerAlt, label: 'Location', value: 'Ottawa, ON', href: undefined },
+              { icon: FaPhoneAlt, label: 'Phone', value: '778-883-3106', href: undefined },
+              { icon: FaEnvelope, label: 'Email', value: emailAddress, href: `mailto:${emailAddress}` },
+              { icon: FaLinkedin, label: 'LinkedIn', value: 'Jola Ajayi', href: linkedInUrl },
             ].map(({ icon: Icon, label, value, href }) => {
               const inner = (
                 <>

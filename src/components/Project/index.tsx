@@ -22,12 +22,12 @@ type ProjectProps = {
 // Full Tailwind class strings must appear in source to avoid purging
 const CATEGORY_META: Record<string, { header: string; text: string }> = {
   'FULL STACK': { header: 'bg-emerald-500', text: 'text-white' },
-  'FRONTEND':   { header: 'bg-sky-500',     text: 'text-white' },
-  'BACKEND':    { header: 'bg-amber-500',   text: 'text-ink'   },
-  'DATA':       { header: 'bg-violet-500',  text: 'text-white' },
-  'SYSTEMS':    { header: 'bg-rose-500',    text: 'text-white' },
-  'DESKTOP':    { header: 'bg-pink-500',    text: 'text-white' },
-  'WEB':        { header: 'bg-teal-500',    text: 'text-white' },
+  'FRONTEND': { header: 'bg-sky-500', text: 'text-white' },
+  'BACKEND': { header: 'bg-amber-500', text: 'text-ink' },
+  'DATA': { header: 'bg-violet-500', text: 'text-white' },
+  'SYSTEMS': { header: 'bg-rose-500', text: 'text-white' },
+  'DESKTOP': { header: 'bg-pink-500', text: 'text-white' },
+  'WEB': { header: 'bg-teal-500', text: 'text-white' },
 }
 const DEFAULT_META = { header: 'bg-brand', text: 'text-white' }
 
@@ -127,7 +127,7 @@ function Project({
             className="flex items-center gap-1.5 text-xs font-bold uppercase text-ink/60 transition-colors hover:text-ink"
           >
             <FaGlobe />
-            <span>Demo</span>
+            <span>Live Demo</span>
           </a>
         )}
         {videoLink && (

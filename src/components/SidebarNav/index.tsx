@@ -17,18 +17,18 @@ const SOCIAL_LINKS: Array<{
   icon: IconType
   external?: boolean
 }> = [
-  { href: 'https://github.com/jola442', label: 'GitHub', icon: FaGithub, external: true },
-  { href: 'https://www.linkedin.com/in/jola-ajayi/', label: 'LinkedIn', icon: FaLinkedin, external: true },
-  { href: 'mailto:benjamen.ajayi@gmail.com', label: 'Email', icon: FaEnvelope },
-  { href: '/Jola_Ajayi_Resume.pdf', label: 'Resume', icon: FaFilePdf, external: true },
-]
+    { href: 'https://github.com/jola442', label: 'GitHub', icon: FaGithub, external: true },
+    { href: 'https://www.linkedin.com/in/jola-ajayi/', label: 'LinkedIn', icon: FaLinkedin, external: true },
+    { href: 'mailto:benjamen.ajayi@gmail.com', label: 'Email', icon: FaEnvelope },
+    { href: '/Jola_Ajayi_Resume.pdf', label: 'Resume', icon: FaFilePdf, external: true },
+  ]
 
 const SKILLS = [
   'JavaScript', 'TypeScript', 'Java', 'Python', 'HTML/CSS',
   'Next.js', 'Node.js', 'Express', 'Spring Boot', 'React',
   'Tailwind', 'JUnit', 'Selenium', 'Cucumber', 'SQL',
   'MongoDB', 'Mongoose', 'Git', 'Docker', 'Jira',
-  'Figma', 'Postman', 'Cursor',
+  'Figma', 'AWS', 'Github Copilot', "Claude Code",
 ]
 
 export default function SidebarNav(): JSX.Element {
@@ -53,11 +53,10 @@ export default function SidebarNav(): JSX.Element {
 
   function navClass(id: string): string {
     const active = activeSection === id
-    return `flex items-center border-2 px-3 py-2 text-xs font-black uppercase tracking-widest transition-all duration-200 shadow-[2px_2px_0px_rgba(0,0,0,0.1)] dark:shadow-[2px_2px_0px_rgba(0,0,0,0.3)] ${
-      active
+    return `flex items-center border-2 px-3 py-2 text-xs font-black uppercase tracking-widest transition-all duration-200 shadow-[2px_2px_0px_rgba(0,0,0,0.1)] dark:shadow-[2px_2px_0px_rgba(0,0,0,0.3)] ${active
         ? 'bg-brand text-white border-brand hover:shadow-[4px_4px_0px_rgba(0,0,0,0.15)] dark:hover:shadow-[4px_4px_0px_rgba(0,0,0,0.4)]'
         : 'bg-white border-ink text-ink hover:bg-brand hover:text-white hover:border-brand hover:skew-y-1 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.15)] dark:bg-[#0B223D] dark:border-white/25 dark:text-white dark:hover:bg-brand dark:hover:text-white dark:hover:border-brand dark:hover:shadow-[4px_4px_0px_rgba(0,0,0,0.4)]'
-    }`
+      }`
   }
 
   const SidebarContent = (
