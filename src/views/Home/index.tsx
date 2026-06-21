@@ -162,8 +162,8 @@ At Visualping, I contribute to product strategy while building internal tools, i
             <p className={`mt-4 text-base leading-7 xl:text-lg ${S}`}>
 Beyond technology, I'm passionate about competition, strategy, and continuous learning.
  Chess is a major interest of mine, which led me to create <a href="https://chessmask.com" target="_blank" rel="noreferrer noopener" className="text-blue-500 underline">Chessmask</a>,
-  a platform for blindfold chess training. Outside of work, you'll usually find me playing video games with friends, skateboarding, or watching football.
-   I'm a longtime Chelsea F.C. supporter and I like to stay active by playing football (soccer), among other sports.
+  a platform for blindfold chess training. Outside of work, you'll usually find me playing video games with friends, skateboarding, or watching football (soccer).
+   I'm a longtime Chelsea F.C. supporter and I like to stay active by playing football, among other sports.
             </p>
           </Reveal>
 
