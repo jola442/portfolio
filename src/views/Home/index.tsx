@@ -152,31 +152,30 @@ export default function Home(): JSX.Element {
           <Reveal className={`border-b-4 p-6 xl:border-b-0 xl:border-r-4 xl:p-12 ${D}`}>
             <div className={`mb-3 text-xs font-black uppercase tracking-widest ${M}`}>About</div>
             <p className={`text-base leading-7 xl:text-lg ${S}`}>
-Software developer with experience in product management and customer-facing roles. I specialize in bridging technical execution with user needs, using customer insights to build practical solutions that deliver measurable impact.
+              Software developer with experience in product management and customer-facing roles. I specialize in bridging technical execution with user needs, using customer insights to build practical solutions that deliver measurable impact.
             </p>
             <p className={`mt-4 text-base leading-7 xl:text-lg ${S}`}>
-At Visualping, I contribute to product strategy while building internal tools, improving workflows, and delivering technical solutions that help teams operate more efficiently and customers achieve better outcomes.
+              At Visualping, I contribute to product strategy while building internal tools, improving workflows, and delivering technical solutions that help teams operate more efficiently and customers achieve better outcomes.
 
             </p>
 
             <p className={`mt-4 text-base leading-7 xl:text-lg ${S}`}>
-Beyond technology, I'm passionate about competition, strategy, and continuous learning.
- Chess is a major interest of mine, which led me to create <a href="https://chessmask.com" target="_blank" rel="noreferrer noopener" className="text-blue-500 underline">Chessmask</a>,
-  a platform for blindfold chess training. Outside of work, you'll usually find me playing video games with friends, skateboarding, or watching football (soccer).
-   I'm a longtime Chelsea F.C. supporter and I like to stay active by playing football, among other sports.
+              Beyond technology, I'm passionate about competition, strategy, and continuous learning.
+              Chess is a major interest of mine, which led me to create <a href="https://chessmask.com" target="_blank" rel="noreferrer noopener" className="text-blue-500 underline">Chessmask</a>,
+              a platform for blindfold chess training. Outside of work, you'll usually find me playing video games with friends, skateboarding, or watching football (soccer).
+              I'm a longtime Chelsea F.C. supporter and I like to stay active by playing football, among other sports.
             </p>
           </Reveal>
 
           <div className={`grid grid-cols-1 divide-y-4 ${Dv}`}>
             {[
               { label: 'Education', title: 'Carleton University', sub: 'Bachelor of Computer Science Honours with High Distinction, Minor in Psychology' },
-              { label: 'Current Role', title: 'Visualping', sub: 'Product Manager (May 2026 - Present)' },
-              { label: 'Engineering Scope', title: 'Visualping', sub: 'Technical PM focused on developing features for internal tools and boosting Customer Success team efficiency' },
+              { label: 'Current Role', title: 'Visualping', sub: 'Product Manager (May 2025 - Present)\nSoftware Developer (Internal Tools) (Jan 2025 - Present)' },
             ].map(({ label, title, sub }, i) => (
               <Reveal key={label} delay={i * 100} className="p-6">
                 <div className={`mb-1 text-xs font-black uppercase tracking-widest ${M}`}>{label}</div>
                 <div className={`font-display text-xl font-black uppercase ${P}`}>{title}</div>
-                <div className={`text-sm font-medium ${S}`}>{sub}</div>
+                <div className={`text-sm font-medium whitespace-pre-line ${S}`}>{sub}</div>
               </Reveal>
             ))}
             <Reveal className="p-6">
@@ -221,28 +220,28 @@ Beyond technology, I'm passionate about competition, strategy, and continuous le
 
               {[
                 {
-                  date: 'May 2026 - Present',
+                  date: 'May 2025 - Present',
                   title: 'Product Manager',
                   company: 'Visualping',
                   summary:
-                    'Drive execution for customer and internal workflow improvements with a technical PM approach. Oversee implementation quality, support internal tool development, and improve Customer Success team efficiency through process and tooling.',
+                    'Delivered Google SSO to reduce onboarding friction and increase sign-ups by 30%, and led onboarding experiments that improved trial activation by 12%. Use customer insights and product analytics to identify automation opportunities and improve team efficiency.',
                   tone: 'bg-emerald-400',
                 },
                 {
-                  date: 'Nov 2024 - May 2026',
+                  date: 'Jan 2025 - Present',
+                  title: 'Software Developer (Internal Tools)',
+                  company: 'Visualping (Concurrent Role)',
+                  summary:
+                    'Built an internal admin platform with Next.js, React, TypeScript, and Tailwind CSS, plus secure role-based APIs that removed direct production DB writes. Led the Admin Dashboard redesign to cut ticket resolution time by 45% and shipped tooling that strengthened SOC 2 audit controls.',
+                  tone: 'bg-amber-400',
+                },
+                {
+                  date: 'Nov 2024 - May 2025',
                   title: 'Customer Success Specialist',
                   company: 'Visualping',
                   summary:
-                    'Developed Next.js API endpoints to support internal tools, helping improve ticket-resolution speed and boosting overall efficiency company-wide. Partnered with enterprise customers and internal teams to diagnose issues across frontend, APIs, backend logs, and crawling workflows.',
+                    'Supported enterprise customers by troubleshooting frontend, backend, API, and infrastructure issues alongside Engineering. Developed deep expertise in browser automation, proxy infrastructure, and large-scale web monitoring systems.',
                   tone: 'bg-violet-400',
-                },
-                {
-                  date: 'June 2024',
-                  title: 'B.C.S. Honours, Minor in Psychology',
-                  company: 'Carleton University',
-                  summary:
-                    'Graduated with High Distinction, maintained Dean\'s Honour Roll, and received Carleton\'s entrance scholarship.',
-                  tone: 'bg-sky-400',
                 },
               ].map((item, index) => {
                 const isLeft = index % 2 === 0
