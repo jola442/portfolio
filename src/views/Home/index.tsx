@@ -220,7 +220,7 @@ export default function Home(): JSX.Element {
 
               {[
                 {
-                  date: 'May 2025 - Present',
+                  date: 'May 2026 - Present',
                   title: 'Product Manager',
                   company: 'Visualping',
                   summary:
@@ -236,7 +236,7 @@ export default function Home(): JSX.Element {
                   tone: 'bg-amber-400',
                 },
                 {
-                  date: 'Nov 2024 - May 2025',
+                  date: 'Nov 2024 - May 2026',
                   title: 'Customer Success Specialist',
                   company: 'Visualping',
                   summary:
