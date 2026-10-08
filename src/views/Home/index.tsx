@@ -220,27 +220,27 @@ export default function Home(): JSX.Element {
 
               {[
                 {
-                  date: 'May 2026 - Present',
-                  title: 'Product Manager',
+                  date: 'Oct 2025 - Present',
+                  title: 'Technical Product Manager',
                   company: 'Visualping',
                   summary:
-                    'Delivered Google SSO to reduce onboarding friction and increase sign-ups by 30%, and led onboarding experiments that improved trial activation by 12%. Use customer insights and product analytics to identify automation opportunities and improve team efficiency.',
+                    'Led the move to a custom AI support chatbot that resolves nearly 90% of conversations without a human, and grew Business-plan trial sign-ups by 10% through A/B tests. Partnered with our Head of Product on Google SSO, increasing sign-ups by 25%.',
                   tone: 'bg-emerald-400',
                 },
                 {
-                  date: 'Jan 2025 - Present',
+                  date: 'Nov 2025 - Present',
                   title: 'Software Developer (Internal Tools)',
                   company: 'Visualping (Concurrent Role)',
                   summary:
-                    'Built an internal admin platform with Next.js, React, TypeScript, and Tailwind CSS, plus secure role-based APIs that removed direct production DB writes. Led the Admin Dashboard redesign to cut ticket resolution time by 45% and shipped tooling that strengthened SOC 2 audit controls.',
+                    'Built an internal admin platform with Next.js, React, TypeScript, and Tailwind CSS, plus secure role-based APIs that removed direct production DB writes. Led the Admin Dashboard redesign to cut ticket resolution time by 30% and shipped tooling that strengthened SOC 2 audit controls.',
                   tone: 'bg-amber-400',
                 },
                 {
-                  date: 'Nov 2024 - May 2026',
+                  date: 'Nov 2024 - Oct 2025',
                   title: 'Customer Success Specialist',
                   company: 'Visualping',
                   summary:
-                    'Supported enterprise customers by troubleshooting frontend, backend, API, and infrastructure issues alongside Engineering. Developed deep expertise in browser automation, proxy infrastructure, and large-scale web monitoring systems.',
+                    'Maintained 101\\% net revenue retention across 15+ B2B accounts worth \\$120K+ ARR, including Fortune 500 and Global 500 clients. Troubleshot frontend, API, and infrastructure issues alongside Engineering.',
                   tone: 'bg-violet-400',
                 },
               ].map((item, index) => {
